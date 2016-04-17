@@ -1,9 +1,12 @@
-{% if latest_question_list %}
-    <ul>
-    {% for question in latest_question_list %}
-        <li><a href="{% url 'weddingapp:detail' question.id %}">{{ question.question_text }}</a></li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>No polls are available.</p>
-{% endif %}
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+    {% if invite %}
+        <p>
+            {% trans "Welcome to Joseph and Louise's wedding website! As we stated on the invitation, please RSVP by 3rd March 2017." %}</p>
+        <p>{% trans "Please click here to continue with your RSVP." %}</p>
+        <p><a href="{% url 'weddingapp:attend' invite.code %}" class="btn btn-wedding-coral">{% trans "Continue" %}</a>
+        </p>
+    {% endif %}
+{% endblock %}

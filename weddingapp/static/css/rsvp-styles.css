@@ -1,0 +1,26 @@
+/*
+ * Colours
+ * Blue: #ADD2ED
+ * Coral: #F69A8F
+ * Ivory: #F3F4EF
+
+ * Dark Blue: #17476a
+ * Dark Coral: #941a0c
+ */
+
+body {
+    background-color: #F3F4EF;
+    font-family: 'Rokkitt', serif;
+    font-size: 1.2em;
+}
+
+.header {
+    background: #ADD2ED;
+    color: #17476a;
+    margin-bottom: 1em;
+    padding: 2em;
+}
+
+.header h1 {
+    font-size: 3em;
+}

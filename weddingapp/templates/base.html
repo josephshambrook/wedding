@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %}My amazing site{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/static/css/v2/bootstrap-flex.min.css"/>
+    <link rel="stylesheet" href="/static/css/rsvp-styles.css">
+</head>
+
+<body>
+<div class="header text-xs-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>Joseph & Louise</h1>
+                <h3>June 3rd 2017</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8 col-md-offset-2">
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+</div>
+</body>
+</html>
