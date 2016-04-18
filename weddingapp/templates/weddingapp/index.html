@@ -6,7 +6,12 @@
         <p>
             {% trans "Welcome to Joseph and Louise's wedding website! As we stated on the invitation, please RSVP by 3rd March 2017." %}</p>
         <p>{% trans "Please click here to continue with your RSVP." %}</p>
-        <p><a href="{% url 'weddingapp:attend' invite.code %}" class="btn btn-wedding-coral">{% trans "Continue" %}</a>
-        </p>
+
+        <div class="row flex-justify-end">
+            <div class="col-sm-4 col-xs-12">
+                <a href="{% url 'weddingapp:attend' invite.code %}"
+                   class="btn btn-wedding-coral btn-lg btn-block">{% trans "Continue" %}</a>
+            </div>
+        </div>
     {% endif %}
 {% endblock %}

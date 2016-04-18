@@ -26,15 +26,18 @@ def get_invite(code):
 
 
 def index_view(request, code):
-    invite = get_invite(code)
+    invite = None
 
     try:
-        context = {
-            'invite': invite,
-        }
-        return render(request, 'weddingapp/index.html', context)
+        invite = get_invite(code)
     except:
         raise Http404("Invite does not exist")
+
+    context = {
+        'invite': invite,
+        'nextUrl': reverse('weddingapp:attend', args=[invite.code]),
+    }
+    return render(request, 'weddingapp/index.html', context)
 
 
 def attend_view(request, code):
@@ -152,6 +155,12 @@ def confirm_view(request, code):
         'invite': invite,
     })
 
+
+def finish_view(request, code):
+    invite = get_invite(code)
+    return render(request, 'weddingapp/finish.html', {
+        'invite': invite,
+    })
 
 ##
 # class RsvpHome(models.Invite):

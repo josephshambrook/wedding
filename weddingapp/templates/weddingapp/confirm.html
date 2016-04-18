@@ -1,8 +1,31 @@
 {% extends "base.html" %}
+{% load i18n %}
 
 {% block content %}
     {% if invite %}
-        <p>Hello <strong>{{ invite.code }}</strong>!</p>
-        <p>Please confirm the details below.</p>
+        <p>{% trans "Before submitting your RSVP, we would like to make sure information provided is correct. Below is an overview of the details provided:" %}</p>
+        <!-- Details -->
+        <div class="row">
+            <div class="col-sm-5 m-b-3">
+                <p>{% trans "If any of these details are incorrect, please click here to amend them." %}</p>
+
+                <div class="row m-t-2">
+                    <div class="col-sm-4 col-xs-12">
+                        <a href="{% url 'weddingapp:attend' invite.code %}"
+                           class="btn btn-wedding-blue btn-lg">{% trans "Go back" %}</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5 col-sm-offset-2 text-md-right m-b-3">
+                <p>{% trans "If all of the above details are correct, please click here to send your RSVP." %}</p>
+
+                <div class="row flex-justify-end m-t-2">
+                    <div class="col-sm-4 col-xs-12">
+                        <a href="{% url 'weddingapp:finish' invite.code %}"
+                           class="btn btn-wedding-coral btn-lg btn-block">{% trans "Send RSVP" %}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     {% endif %}
 {% endblock %}

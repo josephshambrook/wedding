@@ -21,6 +21,17 @@ body {
     padding: 2em;
 }
 
+.header .row {
+    align-items: center;
+}
+
 .header h1 {
     font-size: 3em;
+}
+
+.flex-justify-end {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
 }
