@@ -1,12 +1,9 @@
-from django.forms import modelformset_factory
+from django.db import connection
+from django.forms import modelformset_factory, inlineformset_factory
 from django.shortcuts import get_object_or_404, render, get_list_or_404, render_to_response
 from django.http import HttpResponseRedirect, Http404, HttpResponseNotFound, HttpResponse
 from django.template import RequestContext
 from django.core.urlresolvers import reverse
-from django.template import loader
-from django.views import generic
-from django.views.generic import FormView, TemplateView
-from django import forms
 
 # from .models import Choice, Question
 from weddingapp.forms import ExtraForm
@@ -26,8 +23,6 @@ def get_invite(code):
 
 
 def index_view(request, code):
-    invite = None
-
     try:
         invite = get_invite(code)
     except:
@@ -44,8 +39,6 @@ def attend_view(request, code):
     invite = get_invite(code)
 
     if request.method == 'POST':
-        print('\n POST submission detected')
-
         try:
             # loop through each guest and assign its attendance
             # get all guests that were shown, then all guests sent in the POST
@@ -56,8 +49,6 @@ def attend_view(request, code):
             for guest in guests:
                 guest.attending = guest.guest_name in guests_attending
                 guest.save()
-
-            print('\n')
         except (KeyError, Invite.DoesNotExist):
             # Redisplay the form.
             return render(request, 'weddingapp/attend.html', {
@@ -66,6 +57,7 @@ def attend_view(request, code):
             })
         else:
             print(guests_attending)
+
             # Always return an HttpResponseRedirect after successfully dealing
             # with POST data. This prevents data from being posted twice if a
             # user hits the Back button.
@@ -76,13 +68,9 @@ def attend_view(request, code):
             'invite': invite,
         })
 
-
 def extra_view(request, code):
     # Get the specific invite
     invite = get_invite(code)
-
-    # Get guests attached to this invite
-    guests = invite.guest_set.all()
 
     # Get the context from the request.
     context = RequestContext(request)
@@ -90,63 +78,35 @@ def extra_view(request, code):
     # Store guests attending object
     guests_attending = invite.guest_set.filter(attending=True, invite=invite)
 
-    if request.method == 'POST':
-        form = ExtraForm(request.POST)
+    GuestFormset = inlineformset_factory(Invite, Guest, fields=('diet', 'transport'), extra=0, can_delete=False)
 
-        print(form.data)
+    if request.method == "POST":
+        formset = GuestFormset(request.POST, request.FILES, instance=invite, queryset=Guest.objects.filter(attending=1))
 
-        # Have we been provided with a valid form?
-        if form.is_valid():
-            # Save the new category to the database.
-            form.save(commit=True)
+        if formset.is_valid():
+            # Save the data to the database.
+            formset.save()
 
-            print(form)
-
-            return render(request, 'weddingapp/confirm.html', {
-                'invite': invite,
-            })
+            # Go to Confirm page
+            HttpResponseRedirect('confirm')
         else:
             # The supplied form contained errors - just print them to the terminal for now
-            print form.errors
+            print formset.errors
 
-    # If the request was not a POST, display the form to enter details.
-    guest_formset = modelformset_factory(Guest, form=ExtraForm)
+    if guests_attending.count() > 0:
+        formset = GuestFormset(instance=invite, queryset=Guest.objects.filter(attending=1))
 
-    print "count: ", guest_formset.total_form_count(guest_formset())
-
-    filtered_guest_form = guest_formset(queryset=guests.filter(attending=True))
-
-    # print filtered_guest_form
-
-    # print invite.code
-    # print Guest.objects.filter(attending=True, invite = invite)
-
-    return render_to_response('weddingapp/extra.html', {'GuestForm': filtered_guest_form, 'invite': invite,
-                                                        'guests_attending': guests_attending}, context)
-
-    # if request.method == 'POST':
-    #     print('\n POST submission detected')
-    #
-    #     try:
-    #
-    #
-    #         print('\n')
-    #     except (KeyError, Invite.DoesNotExist):
-    #         # Redisplay the form.
-    #         return render(request, 'weddingapp/attend.html', {
-    #             'invite': invite,
-    #             'error_message': "This invite does not exist.",
-    #         })
-    #     else:
-    #         print(guests_attending)
-    #         # Always return an HttpResponseRedirect after successfully dealing
-    #         # with POST data. This prevents data from being posted twice if a
-    #         # user hits the Back button.
-    #         return HttpResponseRedirect(reverse('weddingapp:vote.html'))
-    # else:
-    #     return render(request, 'weddingapp/extra.html', {
-    #         'invite': invite,
-    #     })
+        # Return the view
+        return render_to_response('weddingapp/extra.html', {
+            'GuestForm': formset,
+            'invite': invite,
+            'guests_attending': guests_attending
+        }, context)
+    else:
+        # Since there's no guests to create a form for, return Confirm view
+        return render(request, 'weddingapp/confirm.html', {
+            'invite': invite,
+        })
 
 
 def confirm_view(request, code):

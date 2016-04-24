@@ -12,7 +12,3 @@ class ExtraForm(forms.ModelForm):
         # Provide an association between the ModelForm and a model
         model = Guest
         fields = ('diet', 'transport')
-
-        # def __init__(self, *args, **kwargs):
-        #     super(ExtraForm, self).__init__(*args, **kwargs)
-        #     self.queryset = Guest.objects.filter(attending=True)

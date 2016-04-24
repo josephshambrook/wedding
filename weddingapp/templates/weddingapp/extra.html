@@ -3,56 +3,19 @@
 
 {% block content %}
     {% if invite %}
-        {#        <p>Hello <strong>{{ invite.code }}</strong>!</p>#}
-        {#        <p>Here's the guests marked as attending. Please enter some extra details about them.</p>#}
-
         <p>{% trans "We'd like a few more details so that we can ensure that any needs you may have are met, and also that your evening will be as enjoyable as possible!" %}</p>
 
-        {#        <form id="extra_form" method="post" action="{% url 'weddingapp:extra' invite.code %}">#}
-        {##}
-        {#            {% csrf_token %}#}
-        {##}
-        {#            {% for guest in guests_attending %}#}
-        {#                <fieldset class="form-group">#}
-        {#                    <h3>Form for {{ guest.guest_name }}</h3>#}
-        {#                    {% for field in GuestForm.visible_fields %}#}
-        {#                        {{ field.errors }}#}
-        {##}
-        {#                        <div>#}
-        {#                            {{ field.help_text }}#}
-        {#                            {{ field }}#}
-        {#                        </div>#}
-        {#                    {% endfor %}#}
-        {#                </fieldset>#}
-        {#            {% endfor %}#}
-        {##}
-        {#            {{ form.management_form }}#}
-        {#            <table>#}
-        {#                {% for form in form %}#}
-        {#                    {{ form }}#}
-        {#                {% endfor %}#}
-        {#            </table>#}
-        {##}
-        {#            <input type="submit" name="submit" value="Submit"/>#}
-        {#        </form>#}
+        {{ form_errors }}
 
         <form method="post" action="">
             {% csrf_token %}
             {{ GuestForm.management_form }}
             <table>
                 {% for form in GuestForm %}
-                    {#                    {% for field in form.visible_fields %}#}
-                    {#                        {{ field.errors }}#}
-                    {##}
-                    {#                        <div>#}
-                    {#                            {{ field.help_text }}#}
-                    {#                            {{ field }}#}
-                    {#                        </div>#}
-                    {#                    {% endfor %}#}
 
-                    {#                    {{ form }}#}
-
-                    {{ form.errors }}
+                    {% for hidden in form.hidden_fields %}
+                        {{ hidden }}
+                    {% endfor %}
 
                     {% for field in form.visible_fields %}
                         {{ field.errors }}
@@ -71,15 +34,5 @@
                 </div>
             </div>
         </form>
-
-
-
-        {#        {% load crispy_forms_tags %}#}
-        {#        {% crispy ExtraFormset ExtraFormset.helper %}#}
-
-        {#        {% for guest in guests_attending %}#}
-        {#            <p>{{ guest.guest_name }}</p>#}
-        {#        {% endfor %}#}
-
     {% endif %}
 {% endblock %}
