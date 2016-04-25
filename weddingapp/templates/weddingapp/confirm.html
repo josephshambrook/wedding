@@ -4,7 +4,28 @@
 {% block content %}
     {% if invite %}
         <p>{% trans "Before submitting your RSVP, we would like to make sure information provided is correct. Below is an overview of the details provided:" %}</p>
-        <!-- Details -->
+
+        <div class="row m-b-2 m-t-2">
+            {% for guest in invite.guest_set.all %}
+                <div class="col-sm-6">
+                    <h5>{{ guest.guest_name }}</h5>
+
+                    <dl class="dl-horizontal">
+                        <dt class="col-sm-3 m-l-1">{% trans "Attending" %}:</dt>
+                        <dd class="col-sm-9 m-l-1">{{ guest.attending|yesno:_("Yes,No") }}</dd>
+
+                        {% if guest.attending == 1 %}
+                            <dt class="col-sm-3 m-l-1">{% trans "Diet" %}:</dt>
+                            <dd class="col-sm-9 m-l-1">{{ guest.diet }}</dd>
+
+                            <dt class="col-sm-3 m-l-1">{% trans "Requires transport" %}:</dt>
+                            <dd class="col-sm-9 m-l-1">{{ guest.transport }}</dd>
+                        {% endif %}
+                    </dl>
+                </div>
+            {% endfor %}
+        </div>
+
         <div class="row">
             <div class="col-sm-5 m-b-3">
                 <p>{% trans "If any of these details are incorrect, please click here to amend them." %}</p>

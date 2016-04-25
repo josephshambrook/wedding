@@ -1,6 +1,6 @@
 from django import forms
 
-from weddingapp.models import Guest
+from weddingapp.models import Guest, Invite
 
 
 class ExtraForm(forms.ModelForm):

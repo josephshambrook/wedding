@@ -3,7 +3,6 @@
 
 {% block content %}
     {% if invite %}
-        {#        <p>Hello <strong>{{ invite.code }}</strong>!</p>#}
         <p>{% trans "We're really looking forward to our wedding and we hope that you will be able to attend our wedding and share this occasion with us" %}
             &#x263A;</p>
         <p>{% trans "Here is a list of the guests on your invitation; please tick the boxes of the guests who will be able to attend." %}</p>
@@ -13,7 +12,7 @@
                 <div>
                     <input type="checkbox" name="attend" id="choice{{ forloop.counter }}"
                            value="{{ guest.guest_name }}"
-                           {% if guest.attending or invite.rsvp_completed == False %}checked="checked"{% endif %}/>
+                           {% if guest.attending %}checked="checked"{% endif %}/>
                     <label for="choice{{ forloop.counter }}">{{ guest.guest_name }}</label>
                 </div>
             {% endfor %}

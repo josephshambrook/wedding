@@ -2,6 +2,10 @@
 {% load i18n %}
 
 {% block content %}
+    {% if errors %}
+        <p>Errors: {{ errors }}</p>
+    {% endif %}
+
     {% if invite %}
         <p>{% trans "We'd like a few more details so that we can ensure that any needs you may have are met, and also that your evening will be as enjoyable as possible!" %}</p>
 
@@ -12,6 +16,7 @@
             {{ GuestForm.management_form }}
             <table>
                 {% for form in GuestForm %}
+                    {{ form.model }}
 
                     {% for hidden in form.hidden_fields %}
                         {{ hidden }}

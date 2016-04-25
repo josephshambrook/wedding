@@ -1,2 +1,6 @@
-<p>This is the 404 page!</p>
-<p>It needs some desperate lurve.</p>
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+    <p>{% trans "The page you have found yourself on does not seem to exist. Please navigate to a real page!" %}</p>
+{% endblock %}

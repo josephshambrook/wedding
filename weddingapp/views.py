@@ -1,11 +1,9 @@
-from django.db import connection
-from django.forms import modelformset_factory, inlineformset_factory
-from django.shortcuts import get_object_or_404, render, get_list_or_404, render_to_response
-from django.http import HttpResponseRedirect, Http404, HttpResponseNotFound, HttpResponse
+from django.forms import inlineformset_factory
+from django.shortcuts import get_object_or_404, render, render_to_response
+from django.http import HttpResponseRedirect, Http404
 from django.template import RequestContext
 from django.core.urlresolvers import reverse
 
-# from .models import Choice, Question
 from weddingapp.forms import ExtraForm
 from .models import Invite, Guest
 
@@ -56,8 +54,6 @@ def attend_view(request, code):
                 'error_message': "This invite does not exist.",
             })
         else:
-            print(guests_attending)
-
             # Always return an HttpResponseRedirect after successfully dealing
             # with POST data. This prevents data from being posted twice if a
             # user hits the Back button.
@@ -67,6 +63,7 @@ def attend_view(request, code):
         return render(request, 'weddingapp/attend.html', {
             'invite': invite,
         })
+
 
 def extra_view(request, code):
     # Get the specific invite
@@ -78,7 +75,9 @@ def extra_view(request, code):
     # Store guests attending object
     guests_attending = invite.guest_set.filter(attending=True, invite=invite)
 
-    GuestFormset = inlineformset_factory(Invite, Guest, fields=('diet', 'transport'), extra=0, can_delete=False)
+    # Create the formset for each Guest
+    GuestFormset = inlineformset_factory(Invite, Guest, form=ExtraForm, fields=('diet', 'transport'), extra=0,
+                                         can_delete=False)
 
     if request.method == "POST":
         formset = GuestFormset(request.POST, request.FILES, instance=invite, queryset=Guest.objects.filter(attending=1))
@@ -88,7 +87,7 @@ def extra_view(request, code):
             formset.save()
 
             # Go to Confirm page
-            HttpResponseRedirect('confirm')
+            return HttpResponseRedirect('confirm')
         else:
             # The supplied form contained errors - just print them to the terminal for now
             print formset.errors
@@ -100,7 +99,8 @@ def extra_view(request, code):
         return render_to_response('weddingapp/extra.html', {
             'GuestForm': formset,
             'invite': invite,
-            'guests_attending': guests_attending
+            'guests_attending': guests_attending,
+            'errors': formset.errors
         }, context)
     else:
         # Since there's no guests to create a form for, return Confirm view
@@ -121,42 +121,3 @@ def finish_view(request, code):
     return render(request, 'weddingapp/finish.html', {
         'invite': invite,
     })
-
-##
-# class RsvpHome(models.Invite):
-#     template_name = 'weddingapp/rsvp.html'
-#     model = Invite
-
-
-# class RsvpQuestion(generic.DetailView):
-#     model = Question
-#     template_name = 'weddingapp/question.html'
-
-
-    # class DetailView(generic.DetailView):
-    #     model = Question
-    #     template_name = 'weddingapp/detail.html'
-
-
-    # class ResultsView(generic.DetailView):
-    #     model = Question
-    #     template_name = 'weddingapp/results.html'
-
-
-    # def vote(request, question_id):
-    #     question = get_object_or_404(Question, pk=question_id)
-    #     try:
-    #         selected_choice = question.choice_set.get(pk=request.POST['choice'])
-    #     except (KeyError, Choice.DoesNotExist):
-    #         # Redisplay the question voting form.
-    #         return render(request, 'weddingapp/detail.html', {
-    #             'question': question,
-    #             'error_message': "You didn't select a choice.",
-    #         })
-    #     else:
-    #         selected_choice.votes += 1
-    #         selected_choice.save()
-    #         # Always return an HttpResponseRedirect after successfully dealing
-    #         # with POST data. This prevents data from being posted twice if a
-    #         # user hits the Back button.
-    #         return HttpResponseRedirect(reverse('weddingapp:results.html', args=(question.id,)))
