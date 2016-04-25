@@ -11,7 +11,8 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 """
 
 import os
-from settings_secret import *
+
+from ourwedding import settings_secret
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -21,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # I place my secret key in a secret file away from GitHub
 # I've placed an example key in settings_secret.py.template
-SECRET_KEY = 'prod-tpo5oq2_6kxpsv^*7xgys^&-7pqrrh%#q2zo(cx#va@z!#evj7'
+SECRET_KEY = settings_secret.PROD_SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
