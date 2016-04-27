@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-18 21:31+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: weddingapp/templates/weddingapp/attend.html:7
+msgid ""
+"We're really looking forward to our wedding and we hope that you will be "
+"able to attend our wedding and share this occasion with us"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/attend.html:9
+msgid ""
+"Here is a list of the guests on your invitation; please tick the boxes of "
+"the guests who will be able to attend."
+msgstr ""
+
+#: weddingapp/templates/weddingapp/attend.html:23
+#: weddingapp/templates/weddingapp/extra.html:70
+#: weddingapp/templates/weddingapp/index.html:13
+msgid "Continue"
+msgstr "Fortsæt"
+
+#: weddingapp/templates/weddingapp/confirm.html:6
+msgid ""
+"Before submitting your RSVP, we would like to make sure information provided "
+"is correct. Below is an overview of the details provided:"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/confirm.html:10
+msgid "If any of these details are incorrect, please click here to amend them."
+msgstr ""
+
+#: weddingapp/templates/weddingapp/confirm.html:15
+msgid "Go back"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/confirm.html:20
+msgid ""
+"If all of the above details are correct, please click here to send your RSVP."
+msgstr ""
+
+#: weddingapp/templates/weddingapp/confirm.html:25
+msgid "Send RSVP"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/extra.html:9
+msgid ""
+"We'd like a few more details so that we can ensure that any needs you may "
+"have are met, and also that your evening will be as enjoyable as possible!"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/finish.html:5
+msgid "Thank you!"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/finish.html:6
+msgid ""
+"Thank you for sending your RSVP; we look forward to seeing you on June 3rd "
+"2017! Please feel free to explore our website; for example, you could take a "
+"look at the /practical information/! Please also check back every now and "
+"then, as we will continue to update the website with more details. See you "
+"soon! - Joseph and Louise"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/index.html:7
+msgid ""
+"Welcome to Joseph and Louise's wedding website! As we stated on the "
+"invitation, please RSVP by 3rd March 2017."
+msgstr ""
+
+#: weddingapp/templates/weddingapp/index.html:8
+msgid "Please click here to continue with your RSVP."
+msgstr ""
