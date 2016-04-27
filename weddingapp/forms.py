@@ -1,10 +1,11 @@
 from django import forms
 
-from weddingapp.models import Guest, Invite
+from weddingapp.models import Guest
 
 
 class ExtraForm(forms.ModelForm):
-    diet = forms.CharField(max_length=128, help_text="Please enter your diet restrictions", required=False)
+    diet = forms.CharField(max_length=128, help_text="Please enter any dietary requirements for :",
+                           required=False)
     transport = forms.BooleanField(initial=False, help_text="Will you be needing transport?", required=False)
 
     # An inline class to provide additional information on the form.

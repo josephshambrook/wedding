@@ -76,7 +76,10 @@ def extra_view(request, code):
     guests_attending = invite.guest_set.filter(attending=True, invite=invite)
 
     # Create the formset for each Guest
-    GuestFormset = inlineformset_factory(Invite, Guest, form=ExtraForm, fields=('diet', 'transport'), extra=0,
+    GuestFormset = inlineformset_factory(Invite, Guest,
+                                         form=ExtraForm,
+                                         fields=('diet', 'transport'),
+                                         extra=0,
                                          can_delete=False)
 
     if request.method == "POST":
@@ -94,6 +97,8 @@ def extra_view(request, code):
 
     if guests_attending.count() > 0:
         formset = GuestFormset(instance=invite, queryset=Guest.objects.filter(attending=1))
+
+        print formset
 
         # Return the view
         return render_to_response('weddingapp/extra.html', {
