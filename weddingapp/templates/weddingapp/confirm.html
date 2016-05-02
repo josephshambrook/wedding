@@ -3,7 +3,7 @@
 
 {% block content %}
     {% if invite %}
-        <p>{% trans "Before completing your RSVP, please ensure the information you have provided is correct. Below is an overview of the details entered:" %}</p>
+        <p>{% trans "Before completing your RSVP, please ensure the information you have provided is correct. Below is an overview of the details entered." %}</p>
 
         <div class="row m-b-2 m-t-2">
             {% for guest in invite.guest_set.all %}
