@@ -1,9 +1,11 @@
 {% extends "base.html" %}
+
+{% load staticfiles %}
 {% load i18n %}
 
 {% block content %}
     <h2>{% trans "Thank you!" %}</h2>
     <p>{% trans "Thank you for sending your RSVP; we look forward to seeing you on June 3rd 2017! Please feel free to explore our website; for example, you could take a look at the /practical information/! Please also check back every now and then, as we will continue to update the website with more details. See you soon! - Joseph and Louise" %}</p>
-    <img src="/static/img/us-min.jpg" class="img-fluid m-b-3 m-t-1" alt="An image of Joseph and Louise on Chelsea
+    <img src="{% static "img/us-min.jpg" %}" class="img-fluid m-b-3 m-t-1" alt="An image of Joseph and Louise on Chelsea
     Embankment in London">
 {% endblock %}

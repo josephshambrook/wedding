@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
+{% load staticfiles %}
+{% load i18n %}
+
 <head>
-    <title>{% block title %}My amazing site{% endblock %}</title>
+    <title>{% block title %}Joseph & Louise 2017{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/static/css/v2/bootstrap-flex.min.css"/>
-    <link rel="stylesheet" href="/static/css/rsvp-styles.css">
+    <link rel="stylesheet" href="{% static "css/v2/bootstrap-flex.min.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/rsvp-styles.css" %}">
 </head>
 
 <body>
 <div class="header text-xs-center">
     <h1>Joseph & Louise</h1>
-    <h3>June 3rd 2017</h3>
+    <h3>{% trans "June 3rd 2017" %}</h3>
 </div>
 
 <div class="container">

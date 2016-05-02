@@ -12,7 +12,7 @@ from weddingapp.utils import code_generator
 @python_2_unicode_compatible
 class Invite(models.Model):
     # Code to identify invites by
-    code = models.CharField(max_length=6, default=code_generator(4), unique=True)
+    code = models.CharField(max_length=6, default=code_generator(4, do_check=True), unique=True)
     # i.e. Shambrook Family
     group_name = models.CharField(max_length=200)
     # number of people in this invite (i.e. husband and wife get one invite)
