@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-18 21:31+0100\n"
+"POT-Creation-Date: 2016-05-02 16:28+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,20 +18,38 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: weddingapp/templates/weddingapp/attend.html:7
+#: ourwedding/settings.py:115
+msgid "Danish"
+msgstr ""
+
+#: ourwedding/settings.py:116
+msgid "English"
+msgstr ""
+
+#: weddingapp/templates/base.html:18
+msgid "June 3rd 2017"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/404.html:5
+msgid ""
+"The page you have found yourself on does not seem to exist. Please navigate "
+"to a real page!"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/attend.html:6
 msgid ""
 "We're really looking forward to our wedding and we hope that you will be "
 "able to attend our wedding and share this occasion with us"
 msgstr ""
 
-#: weddingapp/templates/weddingapp/attend.html:9
+#: weddingapp/templates/weddingapp/attend.html:8
 msgid ""
 "Here is a list of the guests on your invitation; please tick the boxes of "
 "the guests who will be able to attend."
 msgstr ""
 
-#: weddingapp/templates/weddingapp/attend.html:23
-#: weddingapp/templates/weddingapp/extra.html:70
+#: weddingapp/templates/weddingapp/attend.html:22
+#: weddingapp/templates/weddingapp/extra.html:33
 #: weddingapp/templates/weddingapp/index.html:13
 msgid "Continue"
 msgstr "Fortsæt"
@@ -42,34 +60,50 @@ msgid ""
 "is correct. Below is an overview of the details provided:"
 msgstr ""
 
-#: weddingapp/templates/weddingapp/confirm.html:10
-msgid "If any of these details are incorrect, please click here to amend them."
+#: weddingapp/templates/weddingapp/confirm.html:14
+msgid "Attending"
 msgstr ""
 
 #: weddingapp/templates/weddingapp/confirm.html:15
+msgid "Yes,No"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/confirm.html:18
+msgid "Diet"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/confirm.html:21
+msgid "Requires transport"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/confirm.html:31
+msgid "If any of these details are incorrect, please click here to amend them."
+msgstr ""
+
+#: weddingapp/templates/weddingapp/confirm.html:36
 msgid "Go back"
 msgstr ""
 
-#: weddingapp/templates/weddingapp/confirm.html:20
+#: weddingapp/templates/weddingapp/confirm.html:41
 msgid ""
 "If all of the above details are correct, please click here to send your RSVP."
 msgstr ""
 
-#: weddingapp/templates/weddingapp/confirm.html:25
+#: weddingapp/templates/weddingapp/confirm.html:46
 msgid "Send RSVP"
 msgstr ""
 
-#: weddingapp/templates/weddingapp/extra.html:9
+#: weddingapp/templates/weddingapp/extra.html:6
 msgid ""
 "We'd like a few more details so that we can ensure that any needs you may "
 "have are met, and also that your evening will be as enjoyable as possible!"
 msgstr ""
 
-#: weddingapp/templates/weddingapp/finish.html:5
+#: weddingapp/templates/weddingapp/finish.html:7
 msgid "Thank you!"
 msgstr ""
 
-#: weddingapp/templates/weddingapp/finish.html:6
+#: weddingapp/templates/weddingapp/finish.html:8
 msgid ""
 "Thank you for sending your RSVP; we look forward to seeing you on June 3rd "
 "2017! Please feel free to explore our website; for example, you could take a "

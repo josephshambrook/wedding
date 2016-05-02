@@ -5,7 +5,13 @@
 
 {% block content %}
     <h2>{% trans "Thank you!" %}</h2>
-    <p>{% trans "Thank you for sending your RSVP; we look forward to seeing you on June 3rd 2017! Please feel free to explore our website; for example, you could take a look at the /practical information/! Please also check back every now and then, as we will continue to update the website with more details. See you soon! - Joseph and Louise" %}</p>
+    <p>{% trans "Thank you for completing your RSVP! Feel free to explore our website, and check back as we will continue to update it with information and relevant details. See you next June! - Joseph and Louise" %}</p>
+
+    <div class="m-t-2 m-b-2 text-xs-center">
+        <a href="{% url 'weddingapp:finish' invite.code %}" class="btn btn-wedding-coral btn-lg">
+            {% trans "Go to our website" %}</a>
+    </div>
+
     <img src="{% static "img/us-min.jpg" %}" class="img-fluid m-b-3 m-t-1" alt="An image of Joseph and Louise on Chelsea
     Embankment in London">
 {% endblock %}

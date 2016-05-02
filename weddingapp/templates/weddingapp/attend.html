@@ -3,9 +3,11 @@
 
 {% block content %}
     {% if invite %}
-        <p>{% trans "We're really looking forward to our wedding and we hope that you will be able to attend our wedding and share this occasion with us" %}
-            &#x263A;</p>
-        <p>{% trans "Here is a list of the guests on your invitation; please tick the boxes of the guests who will be able to attend." %}</p>
+        {#        <p>{% trans "We're really looking forward to our wedding and we hope that you will be able to attend our wedding and share this occasion with us" %}#}
+        <p>
+            {% trans "We are eagerly awaiting our big day, and we sincerely hope that you will be able to share this special occasion with us." %}</p>
+        <p>
+            {% trans "Below is a list of the guests on your invitation; please untick those who are unable to attend." %}</p>
         <form action="{% url 'weddingapp:attend' invite.code %}" method="post">
             {% csrf_token %}
             {% for guest in invite.guest_set.all %}

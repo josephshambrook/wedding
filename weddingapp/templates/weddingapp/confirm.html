@@ -3,7 +3,7 @@
 
 {% block content %}
     {% if invite %}
-        <p>{% trans "Before submitting your RSVP, we would like to make sure information provided is correct. Below is an overview of the details provided:" %}</p>
+        <p>{% trans "Before completing your RSVP, please ensure the information you have provided is correct. Below is an overview of the details entered:" %}</p>
 
         <div class="row m-b-2 m-t-2">
             {% for guest in invite.guest_set.all %}
@@ -15,11 +15,11 @@
                         <dd class="col-sm-9 m-l-1">{{ guest.attending|yesno:_("Yes,No") }}</dd>
 
                         {% if guest.attending == 1 %}
-                            <dt class="col-sm-3 m-l-1">{% trans "Diet" %}:</dt>
+                            <dt class="col-sm-3 m-l-1">{% trans "Dietary Requirements" %}:</dt>
                             <dd class="col-sm-9 m-l-1">{{ guest.diet }}</dd>
 
-                            <dt class="col-sm-3 m-l-1">{% trans "Requires transport" %}:</dt>
-                            <dd class="col-sm-9 m-l-1">{{ guest.transport }}</dd>
+                            <dt class="col-sm-3 m-l-1">{% trans "Requires Transport" %}:</dt>
+                            <dd class="col-sm-9 m-l-1">{{ guest.transport|yesno:_("Yes,No") }}</dd>
                         {% endif %}
                     </dl>
                 </div>
@@ -28,7 +28,7 @@
 
         <div class="row">
             <div class="col-sm-5 m-b-3">
-                <p>{% trans "If any of these details are incorrect, please click here to amend them." %}</p>
+                <p>{% trans "If any of the above details are incorrect, click below to amend them." %}</p>
 
                 <div class="row m-t-2">
                     <div class="col-sm-4 col-xs-12">
@@ -38,12 +38,12 @@
                 </div>
             </div>
             <div class="col-sm-5 col-sm-offset-2 text-md-right m-b-3">
-                <p>{% trans "If all of the above details are correct, please click here to send your RSVP." %}</p>
+                <p>{% trans "If all of the above details are correct, click below to complete your RSVP." %}</p>
 
                 <div class="row flex-justify-end m-t-2">
                     <div class="col-sm-4 col-xs-12">
                         <a href="{% url 'weddingapp:finish' invite.code %}"
-                           class="btn btn-wedding-coral btn-lg btn-block">{% trans "Send RSVP" %}</a>
+                           class="btn btn-wedding-coral btn-lg btn-block">{% trans "Complete RSVP" %}</a>
                     </div>
                 </div>
             </div>
