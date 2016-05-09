@@ -18,7 +18,7 @@
                             <dt class="col-sm-3 m-l-1">{% trans "Dietary Requirements" %}:</dt>
                             <dd class="col-sm-9 m-l-1">{{ guest.diet }}</dd>
 
-                            <dt class="col-sm-3 m-l-1">{% trans "Requires Transport" %}:</dt>
+                            <dt class="col-sm-3 m-l-1">{% trans "Interest In Transport" %}:</dt>
                             <dd class="col-sm-9 m-l-1">{{ guest.transport|yesno:_("Yes,No") }}</dd>
                         {% endif %}
                     </dl>
@@ -28,12 +28,12 @@
 
         <div class="row">
             <div class="col-sm-5 m-b-3">
-                <p>{% trans "If any of the above details are incorrect, click below to amend them." %}</p>
+                <p>{% trans "If any of the above details are incorrect, you can go back and amend them." %}</p>
 
                 <div class="row m-t-2">
                     <div class="col-sm-4 col-xs-12">
                         <a href="{% url 'weddingapp:attend' invite.code %}"
-                           class="btn btn-wedding-blue btn-lg">{% trans "Go back" %}</a>
+                           class="btn btn-wedding-blue btn-lg">{% trans "Go Back" %}</a>
                     </div>
                 </div>
             </div>

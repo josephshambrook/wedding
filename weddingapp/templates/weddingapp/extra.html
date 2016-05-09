@@ -1,40 +1,44 @@
-{% extends "base.html" %}
-{% load i18n %}
+    {% extends "base.html" %}
+    {% load i18n %}
 
-{% block content %}
-    {% if invite %}
-        <p>{% trans "We would like to ask you to provide a few details so that we can meet any additional needs you may have." %}</p>
+    {% block content %}
+        {% if invite %}
+            <p>{% trans "We would like to ask you to provide a few details so that we can meet any additional needs you may have." %}</p>
 
-        <p>{% trans "As we are aware that a portion of our guests do not live locally, we will potentially provide transport between the church and the reception venue, depending on the amount of guests who require this." %}</p>
+            <p>{% trans "As we are aware that a portion of our guests do not live locally, we will potentially provide transport between the church and the reception venue, depending on the amount of guests who require this." %}</p>
 
-        {{ form_errors }}
+            {{ form_errors }}
 
-        <form method="post" action="">
-            {% csrf_token %}
-            {{ GuestForm.management_form }}
-            <table>
-                {% for form in GuestForm %}
-                    {{ form.guest_name }}
-                    {% for hidden in form.hidden_fields %}
-                        {{ hidden }}
+            {% for guest in guests_attending %}
+                {{ guest.guest_name }}
+            {% endfor %}
+
+            <form method="post" action="">
+                {% csrf_token %}
+                {{ GuestForm.management_form }}
+                <table>
+                    {% for form in GuestForm %}
+
+                        {% for hidden in form.hidden_fields %}
+                            {{ hidden }}
+                        {% endfor %}
+
+                        {% for field in form.visible_fields %}
+                            {{ field.errors }}
+
+                            <div>
+                                {{ field.help_text }}
+                                {{ field }}
+                            </div>
+                        {% endfor %}
                     {% endfor %}
+                </table>
 
-                    {% for field in form.visible_fields %}
-                        {{ field.errors }}
-
-                        <div>
-                            {{ field.help_text }}
-                            {{ field }}
-                        </div>
-                    {% endfor %}
-                {% endfor %}
-            </table>
-
-            <div class="row flex-justify-end m-t-2">
-                <div class="col-sm-4 col-xs-12">
-                    <button type="submit" class="btn btn-wedding-coral btn-lg btn-block">{% trans "Continue" %}</button>
+                <div class="row flex-justify-end m-t-2">
+                    <div class="col-sm-4 col-xs-12">
+                        <button type="submit" class="btn btn-wedding-coral btn-lg btn-block">{% trans "Continue" %}</button>
+                    </div>
                 </div>
-            </div>
-        </form>
-    {% endif %}
-{% endblock %}
+            </form>
+        {% endif %}
+    {% endblock %}

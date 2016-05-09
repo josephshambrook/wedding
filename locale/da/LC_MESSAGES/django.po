@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-02 18:15+0100\n"
+"POT-Creation-Date: 2016-05-02 21:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,9 +26,19 @@ msgstr ""
 msgid "English"
 msgstr ""
 
+#: weddingapp/forms.py:8
+msgid "Please enter any dietary requirements for :"
+msgstr "Eventuelle kostbehov for :"
+
+#: weddingapp/forms.py:12
+msgid ""
+"Would /guest name/ be interested in transport from the church to the "
+"reception?"
+msgstr "Ville /guest_name/ være interesseret i transport fra kirken til receptionen?"
+
 #: weddingapp/templates/base.html:18
 msgid "June 3rd 2017"
-msgstr ""
+msgstr "3. juni 2017"
 
 #: weddingapp/templates/weddingapp/404.html:5
 msgid ""
@@ -41,16 +51,20 @@ msgid ""
 "We are eagerly awaiting our big day, and we sincerely hope that you will be "
 "able to share this special occasion with us."
 msgstr ""
+"Vi venter spændt på vores store dag og vi håber inderligt at du/I har "
+"mulighed for at dele denne særlige lejlighed med os."
 
 #: weddingapp/templates/weddingapp/attend.html:8
 msgid ""
 "Below is a list of the guests on your invitation; please untick those who "
 "are unable to attend."
 msgstr ""
+"Herunder er en liste med de gæster på din invitation; du/I bedes fjerne "
+"markeringen ved dem der ikke kan komme."
 
 #: weddingapp/templates/weddingapp/attend.html:22
 #: weddingapp/templates/weddingapp/extra.html:35
-#: weddingapp/templates/weddingapp/index.html:10
+#: weddingapp/templates/weddingapp/index.html:11
 msgid "Continue"
 msgstr "Fortsæt"
 
@@ -58,47 +72,49 @@ msgstr "Fortsæt"
 msgid ""
 "Before completing your RSVP, please ensure the information you have provided "
 "is correct. Below is an overview of the details entered."
-msgstr ""
+msgstr "Før du/I sender dit/Jeres svar, bedes du/I sikre at de oplysninger som er blevet indtastet er korrekte. Herunder er en oversigt:"
 
 #: weddingapp/templates/weddingapp/confirm.html:14
 msgid "Attending"
-msgstr ""
+msgstr "Kommer"
 
 #: weddingapp/templates/weddingapp/confirm.html:15
 #: weddingapp/templates/weddingapp/confirm.html:22
 msgid "Yes,No"
-msgstr ""
+msgstr "Ja,Nej"
 
 #: weddingapp/templates/weddingapp/confirm.html:18
 msgid "Dietary Requirements"
-msgstr ""
+msgstr "Kostbehov"
 
 #: weddingapp/templates/weddingapp/confirm.html:21
-msgid "Requires Transport"
-msgstr ""
+msgid "Interest In Transport"
+msgstr "Interesset I Transport"
 
 #: weddingapp/templates/weddingapp/confirm.html:31
-msgid "If any of the above details are incorrect, click below to amend them."
-msgstr ""
+msgid "If any of the above details are incorrect, you can go back and amend them."
+msgstr "Hvis nogle af ovenstående oplysninger er forkerte, så kan du gå tilbage og ændre dem."
 
 #: weddingapp/templates/weddingapp/confirm.html:36
-msgid "Go back"
-msgstr ""
+msgid "Go Back"
+msgstr "Gå Tilbage"
 
 #: weddingapp/templates/weddingapp/confirm.html:41
 msgid ""
 "If all of the above details are correct, click below to complete your RSVP."
-msgstr ""
+msgstr "Hvis alle ovenstående oplysninger er korrekte, klik herunder for at afslutte dit svar."
 
 #: weddingapp/templates/weddingapp/confirm.html:46
 msgid "Complete RSVP"
-msgstr ""
+msgstr "Send Svar"
 
 #: weddingapp/templates/weddingapp/extra.html:6
 msgid ""
 "We would like to ask you to provide a few details so that we can meet any "
 "additional needs you may have."
 msgstr ""
+"Vi vil gerne bede om nogle flere oplysninger så vi kan imødekomme eventuelle "
+"yderligere behov."
 
 #: weddingapp/templates/weddingapp/extra.html:8
 msgid ""
@@ -106,25 +122,28 @@ msgid ""
 "potentially provide transport between the church and the reception venue, "
 "depending on the amount of guests who require this."
 msgstr ""
+"Eftersom vi er opmærksomme på at en del af vores gæster ikke bor lokalt, vil "
+"vi muligvis skaffe transport mellem kirken og receptionen, afhængigt af det "
+"antal gæster som angiver behov for dette."
 
 #: weddingapp/templates/weddingapp/finish.html:7
 msgid "Thank you!"
-msgstr ""
+msgstr "Tak!"
 
 #: weddingapp/templates/weddingapp/finish.html:8
 msgid ""
 "Thank you for completing your RSVP! Feel free to explore our website, and "
 "check back as we will continue to update it with information and relevant "
 "details. See you next June! - Joseph and Louise"
-msgstr ""
+msgstr "Tak for dit svar! Udforsk gerne vores hjemmeside, og vend endelig tilbage da vi vil forsætte med at opdatere med flere oplysninger og relevante detaljer. Vi ses til juni! - Joseph og Louise"
 
 #: weddingapp/templates/weddingapp/finish.html:12
 msgid "Go to our website"
-msgstr ""
+msgstr "Gå til vores hjemmeside"
 
-#: weddingapp/templates/weddingapp/finish.html:15
+#: weddingapp/templates/weddingapp/finish.html:16
 msgid "An image of Joseph and Louise on Chelsea Embankment in London"
-msgstr ""
+msgstr "Et billede af Joseph og Louise på Chelsea Embankment i London"
 
 #: weddingapp/templates/weddingapp/index.html:6
 #, python-format
@@ -132,3 +151,6 @@ msgid ""
 "Hello %(invite.group_name)s! Welcome to our RSVP website. As stated on the "
 "invitation, please complete your RSVP by August 15th 2016."
 msgstr ""
+"Hej %(invite.group_name)s! Velkommen til vores hjemmeside hvor du/I kan "
+"sende svar. Som angivet på invitationen bedes dette gjort senest 15. august "
+"2016."

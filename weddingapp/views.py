@@ -83,7 +83,9 @@ def extra_view(request, code):
                                          can_delete=False)
 
     if request.method == "POST":
-        formset = GuestFormset(request.POST, request.FILES, instance=invite, queryset=Guest.objects.filter(attending=1))
+        formset = GuestFormset(request.POST, request.FILES,
+                               instance=invite,
+                               queryset=Guest.objects.filter(attending=1))
 
         if formset.is_valid():
             # Save the data to the database.
@@ -97,8 +99,6 @@ def extra_view(request, code):
 
     if guests_attending.count() > 0:
         formset = GuestFormset(instance=invite, queryset=Guest.objects.filter(attending=1))
-
-        print formset
 
         # Return the view
         return render_to_response('weddingapp/extra.html', {
