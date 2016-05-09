@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load staticfiles %}
+
+{% block content %}
+
+    <h2>FAQs</h2>
+
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" data-tab href="#practical" role="tab">Practical</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-tab href="#cultural" role="tab">Cultural</a>
+        </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div data-tabs-pane class="tab-pane active" id="practical" role="tabpanel">
+            <h3>Practical info</h3>
+        </div>
+        <div data-tabs-pane class="tab-pane" id="cultural" role="tabpanel">
+            <h3>Cultural info</h3>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="{% static "js/tabby.js" %}"></script>
+
+    <script>
+        tabby.init();
+    </script>
+
+{% endblock %}

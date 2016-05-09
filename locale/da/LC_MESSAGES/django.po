@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-09 19:53+0100\n"
+"POT-Creation-Date: 2016-05-09 22:20+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Ville /guest_name/ være interesseret i transport fra kirken til receptionen?"
 
-#: weddingapp/templates/base.html:18
+#: weddingapp/templates/base.html:22
 msgid "June 3rd 2017"
 msgstr "3. juni 2017"
 
@@ -174,3 +174,22 @@ msgid ""
 msgstr ""
 "Hej %(group)s! Velkommen til vores hjemmeside hvor du/I kan sende svar. Som "
 "angivet på invitationen bedes dette gjort senest 15. august 2016."
+
+#, fuzzy
+#~| msgid "Please enter any dietary requirements for %(guest)s"
+#~ msgid ""
+#~ "Please enter any dietary\n"
+#~ "                                    requirements for %(guest)s"
+#~ msgstr "Eventuelle kostbehov for %(guest)s"
+
+#, fuzzy
+#~| msgid ""
+#~| "Would %(guest)s be interested in transport from the church to the "
+#~| "reception?"
+#~ msgid ""
+#~ "Would\n"
+#~ "                                %(guest)s be interested in transport from "
+#~ "the church to the\n"
+#~ "                                reception?"
+#~ msgstr ""
+#~ "Ville %(guest)s være interesseret i transport fra kirken til receptionen?"

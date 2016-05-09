@@ -8,6 +8,19 @@ from weddingapp.forms import ExtraForm
 from .models import Invite, Guest
 
 
+def faq_index(request):
+    return render(request, 'weddingapp/faq.html')
+    # return HttpResponseRedirect('practical')
+
+
+def faq_practical(request):
+    return render(request, 'weddingapp/practical.html')
+
+
+def faq_cultural(request):
+    return render(request, 'weddingapp/cultural.html')
+
+
 def get_invite(code):
     # Expects code to find invite with
     # is there a better function to use than this one with a 404?
