@@ -9,30 +9,41 @@
 
             {{ form_errors }}
 
-            {% for guest in guests_attending %}
-                {{ guest.guest_name }}
-            {% endfor %}
-
             <form method="post" action="">
                 {% csrf_token %}
                 {{ GuestForm.management_form }}
-                <table>
-                    {% for form in GuestForm %}
+                {% for form in GuestForm %}
+
+                    <div class="m-b-2">
+
+                        {#                        <h3>Form for {{ form.instance.guest_name }}</h3>#}
 
                         {% for hidden in form.hidden_fields %}
                             {{ hidden }}
                         {% endfor %}
 
-                        {% for field in form.visible_fields %}
-                            {{ field.errors }}
+                        <fieldset class="form-group">
+                            {{ form.diet.errors }}
+                            <label for="{{ form.diet.id_for_label }}">
+                                {% blocktrans with guest=form.instance.guest_name %}Please enter any dietary
+                                    requirements for {{ guest }}{% endblocktrans %}:
+                            </label>
+                            {{ form.diet }}
+                        </fieldset>
 
-                            <div>
-                                {{ field.help_text }}
-                                {{ field }}
-                            </div>
-                        {% endfor %}
-                    {% endfor %}
-                </table>
+                        <fieldset class="checkbox">
+                            {{ form.transport.errors }}
+                            <label for="{{ form.transport.id_for_label }}">
+                                {{ form.transport }} {% blocktrans with guest=form.instance.guest_name %}Would
+                                {{ guest }} be interested in transport from the church to the
+                                reception?{% endblocktrans %}
+                            </label>
+                        </fieldset>
+
+                        <hr/>
+
+                    </div>
+                {% endfor %}
 
                 <div class="row flex-justify-end m-t-2">
                     <div class="col-sm-4 col-xs-12">

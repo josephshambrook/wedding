@@ -3,7 +3,8 @@
 
 {% block content %}
     {% if invite %}
-        <p>{% blocktrans %}Hello {{ invite.group_name }}! Welcome to our RSVP website. As stated on the invitation, please complete your RSVP by August 15th 2016.{% endblocktrans %}</p>
+        <p>{% blocktrans with group=invite.group_name %}Hello {{ group }}! Welcome to our RSVP website. As stated on the
+            invitation, please complete your RSVP by August 15th 2016.{% endblocktrans %}</p>
 
         <div class="row flex-justify-end">
             <div class="col-sm-4 col-xs-12">
