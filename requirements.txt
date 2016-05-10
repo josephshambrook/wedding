@@ -1,2 +1,7 @@
-django
-django-crispy-forms
+dj-database-url==0.4.1
+Django==1.9.2
+django-crispy-forms==1.6.0
+django-storages==1.4.1
+gunicorn==19.4.5
+self==0.0.2
+wheel==0.29.0

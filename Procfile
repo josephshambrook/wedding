@@ -1,1 +1,1 @@
-web: python manage.py runserver
+web: gunicorn weddingapp.wsgi --log-file -
