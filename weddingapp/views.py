@@ -1,24 +1,29 @@
 from django.forms import inlineformset_factory
 from django.shortcuts import get_object_or_404, render, render_to_response
-from django.http import HttpResponseRedirect, Http404
+from django.http import HttpResponseRedirect, Http404, HttpResponse
 from django.template import RequestContext
 from django.core.urlresolvers import reverse
+from django.template import loader
 
 from weddingapp.forms import ExtraForm
 from .models import Invite, Guest
 
 
 def faq_index(request):
-    return render(request, 'weddingapp/faq.html')
-    # return HttpResponseRedirect('practical')
+    # return render(request, 'weddingapp/faq.html')
+    return HttpResponseRedirect('practical')
 
 
 def faq_practical(request):
-    return render(request, 'weddingapp/practical.html')
+    # return render(request, 'weddingapp/practical.html', {'page': 'practical'})
+    context = {
+        'page': 'practical'
+    }
+    return render(request, 'weddingapp/practical.html', context)
 
 
 def faq_cultural(request):
-    return render(request, 'weddingapp/cultural.html')
+    return render(request, 'weddingapp/cultural.html', {'page': 'cultural'})
 
 
 def get_invite(code):

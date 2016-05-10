@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block layout %}
+
+    <div class="container m-b-3">
+        <div class="row">
+
+            <div class="col-sm-3">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="nav-item">
+                        <a class="nav-link {% if page == "practical" %}active{% endif %}"
+                           href="{% url 'faq:faq_practical' %}">{% trans "Practical" %}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if page == "cultural" %}active{% endif %}"
+                           href="{% url 'faq:faq_cultural' %}">{% trans "Cultural" %}</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-9">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
