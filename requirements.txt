@@ -5,3 +5,4 @@ django-storages==1.4.1
 gunicorn==19.4.5
 self==0.0.2
 wheel==0.29.0
+psycopg2==2.4.4
