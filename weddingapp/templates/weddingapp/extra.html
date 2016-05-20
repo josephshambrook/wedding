@@ -15,9 +15,6 @@
             {% for form in GuestForm %}
 
                 <div class="m-b-2">
-
-                    {#                        <h3>Form for {{ form.instance.guest_name }}</h3>#}
-
                     {% for hidden in form.hidden_fields %}
                         {{ hidden }}
                     {% endfor %}
@@ -41,7 +38,6 @@
                     </fieldset>
 
                     <hr/>
-
                 </div>
             {% endfor %}
 

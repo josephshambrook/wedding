@@ -1,21 +1,41 @@
+from django.conf import settings
 from django.forms import inlineformset_factory
 from django.shortcuts import get_object_or_404, render, render_to_response
 from django.http import HttpResponseRedirect, Http404, HttpResponse
 from django.template import RequestContext
 from django.core.urlresolvers import reverse
 from django.template import loader
+from django.utils import translation
+from django.utils.translation import check_for_language
 
 from weddingapp.forms import ExtraForm
 from .models import Invite, Guest
 
 
+siteLanguages = (('en', 'English'), ('da', 'Danish'))
+
+
+def set_language(request):
+    next = request.META.get('HTTP_REFERER', None)
+    response = HttpResponseRedirect(next)
+
+    if request.method == 'GET':
+        lang_code = request.GET.get('language', None)
+        if lang_code and check_for_language(lang_code):
+            if hasattr(request, 'session'):
+                request.session['django_language'] = lang_code
+            else:
+                response.set_cookie(settings.LANGUAGE_COOKIE_NAME, lang_code)
+            translation.activate(lang_code)
+    return reverse()
+
+
 def faq_index(request):
-    # return render(request, 'weddingapp/faq.html')
+    # automatic redirect (could've done this in .htaccess but meh)
     return HttpResponseRedirect('practical')
 
 
 def faq_practical(request):
-    # return render(request, 'weddingapp/practical.html', {'page': 'practical'})
     context = {
         'page': 'practical'
     }

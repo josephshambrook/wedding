@@ -1,1 +1,1 @@
-web: gunicorn weddingapp.wsgi --log-file -
+web: python runserver.py $PORT

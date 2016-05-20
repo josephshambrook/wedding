@@ -6,6 +6,7 @@ import sqlite3
 conn = sqlite3.connect('db.sqlite3')
 c = conn.cursor()
 
+
 # Code Generator
 # Creates a PIN code, to identify/secure invites
 def code_generator(size=6, chars=string.digits, do_check=False):
