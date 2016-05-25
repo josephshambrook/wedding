@@ -24,9 +24,16 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['.joe-and-lou.co.uk', '.herokuapp.com']
+# import socket
+#
+# try:
+#     HOSTNAME = socket.gethostname()
+# except:
+#     HOSTNAME = 'localhost'
+#
+# ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -118,9 +125,6 @@ DATABASES['default'].update(db_from_env)
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-
-# Allow all host headers
-ALLOWED_HOSTS = ['*']
 
 gettext = lambda s: s
 LANGUAGES = (
