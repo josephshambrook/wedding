@@ -72,7 +72,7 @@ def index_view(request):
         if requested_invite is None:
             return render(request, 'weddingapp/index.html', {
                 'does_not_exist': True,
-                'code': codex
+                'code': code
             })
         else:
             return HttpResponseRedirect(code + '/')
