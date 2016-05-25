@@ -75,7 +75,8 @@ def index_view(request):
                 'code': code
             })
         else:
-            return HttpResponseRedirect(code + '/')
+            # return HttpResponseRedirect(code + '/')
+            return HttpResponseRedirect(reverse('weddingapp:welcome', args=(code,)))
     else:
         return render(request, 'weddingapp/index.html', {})
 
