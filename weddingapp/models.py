@@ -1,18 +1,25 @@
 from __future__ import unicode_literals
 
+import random
+import string
+
 from django.core.validators import RegexValidator
 from django.db import models
 from django.utils.encoding import python_2_unicode_compatible
 
 # needed for Python 2
-from weddingapp.utils import code_generator
+# from weddingapp.utils import code_generator
+
+
+def code_generator(size=6, chars=string.digits):
+    return ''.join(random.choice(chars) for _ in range(size))
 
 
 # RSVP!
 @python_2_unicode_compatible
 class Invite(models.Model):
     # Code to identify invites by
-    code = models.CharField(max_length=6, default=code_generator(4, do_check=True), unique=True)
+    code = models.CharField(max_length=6, default=code_generator(4), unique=True)
     # i.e. Shambrook Family
     group_name = models.CharField(max_length=200)
     # number of people in this invite (i.e. husband and wife get one invite)

@@ -13,12 +13,11 @@ def code_generator(size=6, chars=string.digits, do_check=False):
     code = ''.join(random.choice(chars) for _ in range(size))
 
     def check_db():
-        print 'doing check'
         t = (code,)
         c.execute('SELECT * FROM weddingapp_invite WHERE code=?', t)
-        print c.fetchone()
+        c.fetchone()
 
-        return conn is None
+        return c is None
 
     if do_check:
         if check_db():
@@ -27,7 +26,6 @@ def code_generator(size=6, chars=string.digits, do_check=False):
             # try again
             code_generator(size, chars)
     else:
-        print 'not checking'
         return code
 
         # return ''.join(random.choice(chars) for _ in range(size))

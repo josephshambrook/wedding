@@ -1,10 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "layout_rsvp.html" %}
+{% load i18n %}
 
-</body>
-</html>
+{% block content %}
+    <p>{% trans "Welcome to our RSVP website. Please enter the code on your invitation below to continue." %}</p>
+
+
+
+    <form action="{% url 'weddingapp:index' %}" method="post">
+        {% csrf_token %}
+        <div class="form-group {% if does_not_exist %}has-danger{% endif %}">
+
+            {% if does_not_exist %}
+                <label class="form-control-label" for="code">The code you entered does not exist. Please try another code or get in touch if there's a problem.</label>
+            {% endif %}
+
+            <input type="text" name="code" id="code" class="form-control" value="{{ code }}"
+                   placeholder="Enter your code here"/>
+
+        </div>
+
+        <div class="row flex-justify-end m-t-2">
+            <div class="col-sm-4 col-xs-12">
+                <button type="submit" class="btn btn-wedding-coral btn-lg btn-block">{% trans "Submit" %}</button>
+            </div>
+        </div>
+    </form>
+{% endblock %}

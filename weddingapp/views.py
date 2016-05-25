@@ -4,7 +4,6 @@ from django.shortcuts import get_object_or_404, render, render_to_response
 from django.http import HttpResponseRedirect, Http404, HttpResponse
 from django.template import RequestContext
 from django.core.urlresolvers import reverse
-from django.template import loader
 from django.utils import translation
 from django.utils.translation import check_for_language
 
@@ -49,16 +48,39 @@ def faq_cultural(request):
 def get_invite(code):
     # Expects code to find invite with
     # is there a better function to use than this one with a 404?
-    invite = get_object_or_404(Invite, code=code)
+    # invite = get_object_or_404(Invite, code=code)
 
-    if invite.rsvp_completed:
+    try:
+        invite = Invite.objects.get(code=code)
+    except Invite.DoesNotExist:
+        # TODO: go to error page?
+        invite = None
+
+    if invite is not None and invite.rsvp_completed:
         # go to error page as rsvp completed
-        raise Http404
+        # raise Http404
+        return HttpResponseRedirect('finish')
     else:
         return invite
 
 
-def index_view(request, code):
+def index_view(request):
+    if request.method == 'POST':
+        code = request.POST['code']
+        requested_invite = get_invite(code)
+
+        if requested_invite is None:
+            return render(request, 'weddingapp/index.html', {
+                'does_not_exist': True,
+                'code': codex
+            })
+        else:
+            return HttpResponseRedirect(code + '/')
+    else:
+        return render(request, 'weddingapp/index.html', {})
+
+
+def welcome_view(request, code):
     try:
         invite = get_invite(code)
     except:
@@ -68,7 +90,7 @@ def index_view(request, code):
         'invite': invite,
         'nextUrl': reverse('weddingapp:attend', args=[invite.code]),
     }
-    return render(request, 'weddingapp/index.html', context)
+    return render(request, 'weddingapp/welcome.html', context)
 
 
 def attend_view(request, code):
