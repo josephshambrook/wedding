@@ -88,7 +88,7 @@ def welcome_view(request, code):
 
     context = {
         'invite': invite,
-        'nextUrl': reverse('weddingapp:attend', args=[invite.code]),
+        # 'nextUrl': reverse('weddingapp:attend', args=[invite.code]),
     }
     return render(request, 'weddingapp/welcome.html', context)
 
