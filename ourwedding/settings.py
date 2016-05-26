@@ -33,7 +33,7 @@ DEBUG = True
 # except:
 #     HOSTNAME = 'localhost'
 #
-# ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
