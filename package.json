@@ -1,0 +1,30 @@
+{
+  "name": "ourwedding",
+  "version": "1.0.0",
+  "description": "Our wedding website",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --output-style compressed weddingapp/static/src/scss/styles.scss weddingapp/static/dist/css/styles.css",
+    "autoprefix": "postcss -u autoprefixer -r weddingapp/static/dist/css/styles.css",
+    "build:scss": "npm run scss && npm run autoprefix",
+    "watch:scss": "watch 'npm run build:scss' weddingapp/static/src/scss",
+    "imagemin": "imagemin weddingapp/src/img/* dist/img -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josephshambrook/wedding.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josephshambrook/wedding/issues"
+  },
+  "homepage": "https://github.com/josephshambrook/wedding#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "imagemin-cli": "^2.1.0",
+    "node-sass": "^3.7.0",
+    "postcss-cli": "^2.5.2",
+    "watch": "^0.18.0"
+  }
+}

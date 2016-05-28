@@ -64,6 +64,10 @@ def get_invite(code):
         return invite
 
 
+def home_view(request):
+    return render_to_response('weddingapp/home.html')
+
+
 def index_view(request):
     if request.method == 'POST':
         code = request.POST['code']

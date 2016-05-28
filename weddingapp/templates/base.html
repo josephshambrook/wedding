@@ -12,13 +12,13 @@
     <title>{% block title %}Joseph & Louise{% endblock %}</title>
 
     <link href='https://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="{% static "css/v3/bootstrap-flex.min.css" %}"/>
-    <link rel="stylesheet" href="{% static "css/rsvp-styles.css" %}">
+    <link rel="stylesheet" href="{% static "dist/css/bootstrap-flex.min.css" %}"/>
+    <link rel="stylesheet" href="{% static "dist/css/styles.css" %}">
 </head>
 
 <body>
 <div class="header text-xs-center">
-    <div class="language-picker">
+{#    <div class="language-picker">#}
 {#        <form action="{% url 'weddingapp.views.set_language' %}" method="post">#}
 {#            {% csrf_token %}#}
 {#            <input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:' }}"/>#}
@@ -33,7 +33,7 @@
 {#            </select>#}
 {#            <input type="submit" value="Change"/>#}
 {#        </form>#}
-    </div>
+{#    </div>#}
 
     <h1>Joseph & Louise</h1>
     <h3>{% trans "June 3rd 2017" %}</h3>
