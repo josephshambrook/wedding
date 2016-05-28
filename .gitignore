@@ -1,3 +1,6 @@
 .env
 ourwedding/settings.py
+ourwedding/settings_secret.py
+ourwedding/settings_secret.py.template
+ourwedding/settings.pyc
 node_modules/

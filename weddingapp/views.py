@@ -69,6 +69,7 @@ def home_view(request):
 
 
 def index_view(request):
+    print "index view!"
     if request.method == 'POST':
         code = request.POST['code']
         requested_invite = get_invite(code)
