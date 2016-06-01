@@ -4,8 +4,8 @@
   "description": "Our wedding website",
   "main": "index.js",
   "scripts": {
-    "scss": "node-sass --output-style compressed weddingapp/static/src/scss/styles.scss weddingapp/static/dist/css/styles.css",
-    "autoprefix": "postcss -u autoprefixer -r weddingapp/static/dist/css/styles.css",
+    "scss": "node-sass --output-style compressed weddingapp/static/src/scss/pages -o weddingapp/static/dist/css",
+    "autoprefix": "postcss -u autoprefixer -r weddingapp/static/dist/css/*.css",
     "build:scss": "npm run scss && npm run autoprefix",
     "watch:scss": "watch 'npm run build:scss' weddingapp/static/src/scss",
     "imagemin": "imagemin weddingapp/src/img/* dist/img -p"

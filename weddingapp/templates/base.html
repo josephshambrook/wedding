@@ -13,11 +13,11 @@
 
     <link href='https://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{% static "dist/css/bootstrap-flex.min.css" %}"/>
-    <link rel="stylesheet" href="{% static "dist/css/styles.css" %}">
+    {% block styles %}{% endblock %}
 </head>
 
 <body>
-<div class="header text-xs-center">
+<div class="small-header text-xs-center">
 {#    <div class="language-picker">#}
 {#        <form action="{% url 'weddingapp.views.set_language' %}" method="post">#}
 {#            {% csrf_token %}#}

@@ -1,6 +1,88 @@
-{% extends "layout_rsvp.html" %}
+<!DOCTYPE html>
+<html lang="en">
+
+{% load staticfiles %}
 {% load i18n %}
 
-{% block content %}
-    <p>hello world!</p>
-{% endblock %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>{% block title %}Joseph & Louise{% endblock %}</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{% static "dist/css/bootstrap-flex.min.css" %}"/>
+{#    {% block styles %}{% endblock %}#}
+    <link rel="stylesheet" href="{% static "dist/css/home_styles.css" %}">
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h1>Hello World!</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="section-about-wedding container">
+    <div class="section-title">
+        <h2>The Wedding</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-6">Church</div>
+        <div class="col-md-6">Venue</div>
+    </div>
+</section>
+
+<section class="section-about-us container">
+    <div class="section-title">
+        <h2>The Couple</h2>
+    </div>
+    <div class="row">
+        <div class="col-col-md-6">
+            <p>About Louise</p>
+        </div>
+        <div class="col-col-md-6">
+            <p>About Joseph</p>
+        </div>
+    </div>
+</section>
+
+<section class="section-links container">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Got Questions?</h2>
+            <button>Go to FAQs</button>
+        </div>
+        <div class="col-md-6">
+            <h2>Need to RSVP?</h2>
+            <button>Go to our RSVP site</button>
+        </div>
+    </div>
+</section>
+
+<section class="section-contact container">
+    <div class="section-title">
+        <h2>Get in touch</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-6">Email</div>
+        <div class="col-md-6">Facebook</div>
+    </div>
+</section>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-18052288-6', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>

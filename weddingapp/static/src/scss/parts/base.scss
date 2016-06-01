@@ -1,0 +1,17 @@
+// Variables
+$blue: #ADD2ED;
+$blue-dark: #17476a;
+$coral: #F69A8F;
+$coral-dark: #941a0c;
+$ivory: #F3F4EF;
+
+// General styles
+body {
+  background-color: $ivory;
+  font-family: 'Rokkitt', serif;
+  font-size: 1.2em;
+}
+
+.flex-justify-end {
+  justify-content: flex-end;
+}

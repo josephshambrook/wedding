@@ -1,0 +1,35 @@
+// Small Header
+.small-header {
+  background-color: #ADD2ED;
+  color: $blue-dark;
+  margin-bottom: 1em;
+  padding: 2em;
+  position: relative;
+
+  // bunting
+  &:before, &:after {
+    background: url(../../../dist/img/bunting1.svg) no-repeat;
+    content: '';
+    height: 50%;
+    position: absolute;
+    top: 0;
+    width: 25%;
+    transform-origin: 50% 150%;
+  }
+  &:before {
+    left: 0;
+    transform: rotate(-40deg);
+  }
+  &:after {
+    right: 0;
+    transform: rotate(40deg);
+  }
+
+  .row {
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+}
