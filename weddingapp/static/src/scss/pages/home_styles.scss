@@ -5,10 +5,12 @@
 
 header {
   align-items:center;
-  background: linear-gradient($ivory-rgba, $ivory-rgba), url(../img/header-notting-hill-min.jpg) no-repeat -400px -60px fixed;
-  background-size:cover;
+  //background: linear-gradient($ivory-rgba, $ivory-rgba), url(../img/header-notting-hill-min.jpg) no-repeat -400px -60px fixed;
+  //background-size:cover;
+  background: linear-gradient($ivory-rgba, $ivory-rgba), url(../img/header-notting-hill-min.jpg) no-repeat -410px -110px fixed;
+  background-size: cover;
   display:flex;
-  height:600px;
+  height:450px;
 
   .header-title { font-size:4rem; }
   .header-subtitle { font-size:3rem; }
@@ -16,19 +18,16 @@ header {
 
 @media(min-width: 544px) {
   header {
-    background-position: center -60px;
+    background-position: center -100px;
     min-height:450px;
-    height:450px;
   }
 }
 
 header, section {
   padding: 90px 0;
-  min-height:550px;
 }
 
 .section-title {
-  //font-size:3rem;
   margin-bottom:20px;
   > * {
     font-size: 2.5rem;
