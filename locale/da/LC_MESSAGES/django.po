@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-03 13:47+0100\n"
+"POT-Creation-Date: 2016-06-10 14:05+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -124,107 +124,107 @@ msgstr ""
 msgid "Complete RSVP"
 msgstr "Send Svar"
 
-#: weddingapp/templates/weddingapp/cultural.html:6
-msgid "Traditions – Landing"
-msgstr ""
-
 #: weddingapp/templates/weddingapp/cultural.html:7
-msgid ""
-"There are range of curious and entertaining traditions connected to a "
-"wedding reception in Denmark. We have outlined these below so that hopefully "
-"our guests won't be (too) surprised!"
+msgid "Wedding traditions"
 msgstr ""
 
-#: weddingapp/templates/weddingapp/cultural.html:9
-msgid "Newly-weds Kissing"
+#: weddingapp/templates/weddingapp/cultural.html:8
+msgid ""
+"There are a range of curious and entertaining traditions connected to a "
+"wedding reception in Denmark. We have outlined these below so our guests "
+"hopefully won't be (too) surprised!"
 msgstr ""
 
 #: weddingapp/templates/weddingapp/cultural.html:10
-msgid ""
-"At any time during the dinner, guests can begin to clink their cutlery on "
-"the crockery, and the newly-weds must stand on their chairs and kiss. If the "
-"guests begin to trample their feet on the floor, the newly-weds must climb "
-"under the table and kiss."
+msgid "Kissing rituals"
 msgstr ""
 
-#: weddingapp/templates/weddingapp/cultural.html:12
-msgid "Newly-weds Leave the Table"
+#: weddingapp/templates/weddingapp/cultural.html:11
+msgid ""
+"When the guests clink their cutlery on their plates, the newlyweds must "
+"stand on their chairs and kiss. If the guests stamp their feet on the floor, "
+"they must climb under the table and kiss. "
 msgstr ""
 
 #: weddingapp/templates/weddingapp/cultural.html:13
-msgid ""
-"When either of the newly-weds leave the table, the guests of the same gender "
-"as the person who has left (i.e. the opposite to the person who is still "
-"sitting), are allowed to run up to the top table and give them a cheeky kiss "
-"on the cheek!"
+msgid "Kissing rituals – when the newlyweds leave the table"
 msgstr ""
 
-#: weddingapp/templates/weddingapp/cultural.html:15
-msgid "Cutting Brides Veil"
+#: weddingapp/templates/weddingapp/cultural.html:14
+msgid ""
+"When either of the newlyweds leave the table, guests of the same gender can "
+"run up to give the person left a cheeky kiss on the cheek! i.e. if the bride "
+"leaves the table, the female guests get to run up and kiss the groom, and "
+"vice versa."
 msgstr ""
 
 #: weddingapp/templates/weddingapp/cultural.html:16
-msgid ""
-"After the dance, the bride's veil is cut or torn into pieces, and according "
-"to superstitition, the more it is ruined, the happier she will be in her "
-"marriage and for guests who take a piece home with them, this will bring "
-"them luck."
+msgid "Cutting the brides veil"
 msgstr ""
 
-#: weddingapp/templates/weddingapp/cultural.html:18
-msgid "Cutting Joe's Socks"
+#: weddingapp/templates/weddingapp/cultural.html:17
+msgid ""
+"After the first dance, the bride's veil is cut or torn into pieces. "
+"According to superstition, the more it is ruined, the happier she will be in "
+"her marriage and guests should take a piece home with them as this will "
+"bring them luck."
 msgstr ""
 
 #: weddingapp/templates/weddingapp/cultural.html:19
+msgid "Cutting the grooms socks"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/cultural.html:20
 msgid ""
 "Before leaving the reception, the male guests must remove the groom's socks "
 "and cut off the toes. This is to signify that he is no longer on "
-"“frierfødder”, which translates to “proposing feet” - therefore because he "
-"is no longer on his “feet”, he won't need socks!"
-msgstr ""
-
-#: weddingapp/templates/weddingapp/cultural.html:21
-msgid "'Brudevals'"
+"“frierfødder”, which translates to “proposing feet” - essentially that he is "
+"no longer courting!"
 msgstr ""
 
 #: weddingapp/templates/weddingapp/cultural.html:22
-msgid ""
-"The traditional first dance is called “Brudevalsen” which translates to “The "
-"Bridal Waltz”. It is superstition that this must be danced before midnight, "
-"otherwise the marriage will not bear children. The bride and groom dance "
-"this with their guests around them, who after a minute or so start to close "
-"in on the couple, until the couple are no longer able to move. Here is a "
-"link to the royal wedding from 2004, where the Danish crown prince and crown "
-"princess danced their brudevals: https://www.youtube.com/watch?v=yVQarqT61ss"
+msgid "Brudevalsen – the first dance"
 msgstr ""
 
-#: weddingapp/templates/weddingapp/cultural.html:24
-msgid "Pictures"
-msgstr ""
-
-#: weddingapp/templates/weddingapp/cultural.html:25
+#: weddingapp/templates/weddingapp/cultural.html:23
 msgid ""
-"While the Danish tradition is to take portraits of the couple, it is English "
-"tradition to take several formal photographs of many family constellations – "
-"so if we ask you to jump into a formal picture, please don't be taken aback!"
+"The traditional first dance is called “Brudevalsen”, which translates to "
+"“The Bride Waltz”. The bride and groom dance with their guests surrounding "
+"them, who after a minute or so begin to close in on the couple, until they "
+"are no longer able to move. For a visual image of what this will look like, "
+"this is a video of the royal wedding in 2004:"
 msgstr ""
 
 #: weddingapp/templates/weddingapp/cultural.html:27
-msgid "Confetti / rice"
+#: weddingapp/templates/weddingapp/practical.html:39
+msgid "Formal pictures"
 msgstr ""
 
 #: weddingapp/templates/weddingapp/cultural.html:28
 msgid ""
-"Upon leaving the church, it is Danish tradition to throw rice at the newly-"
-"weds (which we supply), and English tradition to throw confetti (which you "
-"supply). We have decided to go with rice."
-msgstr ""
-
-#: weddingapp/templates/weddingapp/cultural.html:31
-msgid "No Songs"
+"The Danish tradition is to take portraits of the couple and the English "
+"tradition is to take photographs of many family constellations. If we ask "
+"you to jump into a formal picture, please don't be taken aback!"
 msgstr ""
 
 #: weddingapp/templates/weddingapp/cultural.html:32
+#: weddingapp/templates/weddingapp/practical.html:36
+msgid "Confetti or rice"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/cultural.html:33
+msgid ""
+"Upon leaving the church, it is Danish tradition to throw rice at the "
+"newlyweds, which they supply. It is English tradition to throw confetti, "
+"which you supply. We have decided to go with rice."
+msgstr ""
+
+#: weddingapp/templates/weddingapp/cultural.html:37
+#: weddingapp/templates/weddingapp/practical.html:48
+msgid "Songs for an occasion"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/cultural.html:38
 msgid ""
 "While we appreciate festive additions to our reception, we're not keen on "
 "the Danish tradition of writing songs and we're also mindful that half our "
@@ -303,10 +303,18 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
+#: weddingapp/templates/weddingapp/practical.html:7
+msgid "Wedding date and time"
+msgstr ""
+
 #: weddingapp/templates/weddingapp/practical.html:8
 msgid ""
 "The date of the wedding is June 3rd 2017. The ceremony is due to start at "
 "2:30pm."
+msgstr ""
+
+#: weddingapp/templates/weddingapp/practical.html:10
+msgid "RSVP date"
 msgstr ""
 
 #: weddingapp/templates/weddingapp/practical.html:11
@@ -320,11 +328,21 @@ msgstr ""
 "Hej %(group)s! Velkommen til vores hjemmeside hvor du/I kan sende svar. Som "
 "angivet på invitationen bedes dette gjort senest 15. august 2016."
 
+#: weddingapp/templates/weddingapp/practical.html:13
+msgid "Lost RSVP code"
+msgstr ""
+
 #: weddingapp/templates/weddingapp/practical.html:14
 msgid ""
 "If you have lost your RSVP code, please send us an email and we will be "
 "happy to resend it to you."
 msgstr ""
+
+#: weddingapp/templates/weddingapp/practical.html:16
+#, fuzzy
+#| msgid "Complete RSVP"
+msgid "Amend RSVP"
+msgstr "Send Svar"
 
 #: weddingapp/templates/weddingapp/practical.html:17
 msgid ""
@@ -333,19 +351,27 @@ msgid ""
 "possible."
 msgstr ""
 
-#: weddingapp/templates/weddingapp/practical.html:20
-msgid "You can locate our gift registry here:"
+#: weddingapp/templates/weddingapp/practical.html:23
+msgid "Dress code"
 msgstr ""
 
-#: weddingapp/templates/weddingapp/practical.html:23
+#: weddingapp/templates/weddingapp/practical.html:24
 msgid "The dress code is formal casual."
 msgstr ""
 
 #: weddingapp/templates/weddingapp/practical.html:26
-msgid "The ceremony will take place at St. George's Church, Beckenham, Kent."
+msgid "Church details"
 msgstr ""
 
-#: weddingapp/templates/weddingapp/practical.html:32
+#: weddingapp/templates/weddingapp/practical.html:27
+msgid "The ceremony will take place at"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/practical.html:33
+msgid "Unplugged church"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/practical.html:34
 msgid ""
 "While we appreciate that our guests are as keen to remember the day as we "
 "are, we have hired photographers to cover the day, and we will naturally be "
@@ -355,11 +381,25 @@ msgid ""
 "doors, feel free to snap away!"
 msgstr ""
 
-#: weddingapp/templates/weddingapp/practical.html:41
-msgid "The reception will take place at The Old Rectory, Brentwood, Essex."
+#: weddingapp/templates/weddingapp/practical.html:37
+#: weddingapp/templates/weddingapp/practical.html:40
+#: weddingapp/templates/weddingapp/practical.html:49
+msgid "Click here to view this answer."
 msgstr ""
 
-#: weddingapp/templates/weddingapp/practical.html:44
+#: weddingapp/templates/weddingapp/practical.html:42
+msgid "Reception details"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/practical.html:43
+msgid "The reception will take place at"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/practical.html:45
+msgid "Transport to the reception"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/practical.html:46
 msgid ""
 "Depending on the amount of people who express interest, we will provide "
 "transport from the church to the reception. Once we have received all of our "
@@ -367,8 +407,8 @@ msgid ""
 "interest."
 msgstr ""
 
-#: weddingapp/templates/weddingapp/practical.html:48
-msgid "Click here to view this answer."
+#: weddingapp/templates/weddingapp/practical.html:51
+msgid "Speeches"
 msgstr ""
 
 #: weddingapp/templates/weddingapp/practical.html:52
@@ -377,10 +417,18 @@ msgid ""
 "that this can be arranged with our toastmaster on the day."
 msgstr ""
 
+#: weddingapp/templates/weddingapp/practical.html:54
+msgid "Cabs"
+msgstr ""
+
 #: weddingapp/templates/weddingapp/practical.html:55
 msgid ""
 "There is a range of local taxi services for transport from the reception. "
 "We'll compile a list closer to the wedding."
+msgstr ""
+
+#: weddingapp/templates/weddingapp/practical.html:57
+msgid "Hotels"
 msgstr ""
 
 #: weddingapp/templates/weddingapp/practical.html:58
@@ -389,8 +437,12 @@ msgid ""
 "closer to the wedding."
 msgstr ""
 
+#: weddingapp/templates/weddingapp/practical.html:60
+msgid "Contact Details"
+msgstr ""
+
 #: weddingapp/templates/weddingapp/practical.html:61
-msgid "You can contact us either by email or"
+msgid "You can contact us either by email or Facebook."
 msgstr ""
 
 #: weddingapp/templates/weddingapp/welcome.html:6
