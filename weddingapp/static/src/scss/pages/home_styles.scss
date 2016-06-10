@@ -5,12 +5,14 @@
 
 header {
   align-items:center;
-  //background: linear-gradient($ivory-rgba, $ivory-rgba), url(../img/header-notting-hill-min.jpg) no-repeat -400px -60px fixed;
-  //background-size:cover;
-  background: url(../img/header-notting-hill-faded.png) no-repeat -410px -110px fixed;
+  background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(../img/header-notting-hill-faded.png) no-repeat -200px center scroll;
+  -webkit-background-size: cover;
   background-size: cover;
+  color: $ivory;
   display:flex;
   height:450px;
+  position:relative;
+  width:100%;
 
   .header-title { font-size:4rem; }
   .header-subtitle { font-size:3rem; }
@@ -18,7 +20,8 @@ header {
 
 @media(min-width: 544px) {
   header {
-    background-position: center -100px;
+    background-position: right center;
+    background-size: cover;
     min-height:450px;
   }
 }
@@ -55,7 +58,11 @@ header, section {
 }
 
 .section-links {
-  background:$blue;
+  //background:$blue;
+  $ivory-dark-rgba: rgba(243,244,239, 0.7);
+  $blue-dark-rgba: rgba(173,210,237,0.8);
+  background: linear-gradient($blue-dark-rgba, $blue-dark-rgba), url(../img/cups-min.png) no-repeat center center scroll;
+  background-size:cover;
   min-height:330px;
 }
 
@@ -66,6 +73,13 @@ header, section {
 .section-final-photo {
   background: linear-gradient($ivory-rgba, $ivory-rgba), url(../img/footer-tree.png) no-repeat center bottom;
   background-size:cover;
+  height:400px;
+}
+
+@media(min-width: 544px) {
+  .section-final-photo {
+    height:600px;
+  }
 }
 
 .tile-map {
