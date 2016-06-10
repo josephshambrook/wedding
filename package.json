@@ -8,7 +8,7 @@
     "autoprefix": "postcss -u autoprefixer -r weddingapp/static/dist/css/*.css",
     "build:scss": "npm run scss && npm run autoprefix",
     "watch:scss": "watch 'npm run build:scss' weddingapp/static/src/scss",
-    "imagemin": "imagemin weddingapp/src/img/* dist/img -p"
+    "imagemin": "imagemin weddingapp/static/src/img weddingapp/static/dist/img -p"
   },
   "repository": {
     "type": "git",

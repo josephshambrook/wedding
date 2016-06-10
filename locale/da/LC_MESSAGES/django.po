@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-09 22:20+0100\n"
+"POT-Creation-Date: 2016-06-03 13:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ourwedding/settings.py:116
+#: ourwedding/settings.py:131
 msgid "Danish"
 msgstr ""
 
-#: ourwedding/settings.py:117
+#: ourwedding/settings.py:132
 msgid "English"
 msgstr ""
 
@@ -37,9 +37,17 @@ msgid ""
 msgstr ""
 "Ville /guest_name/ være interesseret i transport fra kirken til receptionen?"
 
-#: weddingapp/templates/base.html:22
+#: weddingapp/templates/base.html:39
 msgid "June 3rd 2017"
 msgstr "3. juni 2017"
+
+#: weddingapp/templates/layout_faq.html:19
+msgid "Practical"
+msgstr ""
+
+#: weddingapp/templates/layout_faq.html:25
+msgid "Cultural"
+msgstr ""
 
 #: weddingapp/templates/weddingapp/404.html:5
 msgid ""
@@ -64,8 +72,8 @@ msgstr ""
 "markeringen ved dem der ikke kan komme."
 
 #: weddingapp/templates/weddingapp/attend.html:22
-#: weddingapp/templates/weddingapp/extra.html:47
-#: weddingapp/templates/weddingapp/index.html:11
+#: weddingapp/templates/weddingapp/extra.html:46
+#: weddingapp/templates/weddingapp/welcome.html:12
 msgid "Continue"
 msgstr "Fortsæt"
 
@@ -116,6 +124,114 @@ msgstr ""
 msgid "Complete RSVP"
 msgstr "Send Svar"
 
+#: weddingapp/templates/weddingapp/cultural.html:6
+msgid "Traditions – Landing"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/cultural.html:7
+msgid ""
+"There are range of curious and entertaining traditions connected to a "
+"wedding reception in Denmark. We have outlined these below so that hopefully "
+"our guests won't be (too) surprised!"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/cultural.html:9
+msgid "Newly-weds Kissing"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/cultural.html:10
+msgid ""
+"At any time during the dinner, guests can begin to clink their cutlery on "
+"the crockery, and the newly-weds must stand on their chairs and kiss. If the "
+"guests begin to trample their feet on the floor, the newly-weds must climb "
+"under the table and kiss."
+msgstr ""
+
+#: weddingapp/templates/weddingapp/cultural.html:12
+msgid "Newly-weds Leave the Table"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/cultural.html:13
+msgid ""
+"When either of the newly-weds leave the table, the guests of the same gender "
+"as the person who has left (i.e. the opposite to the person who is still "
+"sitting), are allowed to run up to the top table and give them a cheeky kiss "
+"on the cheek!"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/cultural.html:15
+msgid "Cutting Brides Veil"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/cultural.html:16
+msgid ""
+"After the dance, the bride's veil is cut or torn into pieces, and according "
+"to superstitition, the more it is ruined, the happier she will be in her "
+"marriage and for guests who take a piece home with them, this will bring "
+"them luck."
+msgstr ""
+
+#: weddingapp/templates/weddingapp/cultural.html:18
+msgid "Cutting Joe's Socks"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/cultural.html:19
+msgid ""
+"Before leaving the reception, the male guests must remove the groom's socks "
+"and cut off the toes. This is to signify that he is no longer on "
+"“frierfødder”, which translates to “proposing feet” - therefore because he "
+"is no longer on his “feet”, he won't need socks!"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/cultural.html:21
+msgid "'Brudevals'"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/cultural.html:22
+msgid ""
+"The traditional first dance is called “Brudevalsen” which translates to “The "
+"Bridal Waltz”. It is superstition that this must be danced before midnight, "
+"otherwise the marriage will not bear children. The bride and groom dance "
+"this with their guests around them, who after a minute or so start to close "
+"in on the couple, until the couple are no longer able to move. Here is a "
+"link to the royal wedding from 2004, where the Danish crown prince and crown "
+"princess danced their brudevals: https://www.youtube.com/watch?v=yVQarqT61ss"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/cultural.html:24
+msgid "Pictures"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/cultural.html:25
+msgid ""
+"While the Danish tradition is to take portraits of the couple, it is English "
+"tradition to take several formal photographs of many family constellations – "
+"so if we ask you to jump into a formal picture, please don't be taken aback!"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/cultural.html:27
+msgid "Confetti / rice"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/cultural.html:28
+msgid ""
+"Upon leaving the church, it is Danish tradition to throw rice at the newly-"
+"weds (which we supply), and English tradition to throw confetti (which you "
+"supply). We have decided to go with rice."
+msgstr ""
+
+#: weddingapp/templates/weddingapp/cultural.html:31
+msgid "No Songs"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/cultural.html:32
+msgid ""
+"While we appreciate festive additions to our reception, we're not keen on "
+"the Danish tradition of writing songs and we're also mindful that half our "
+"guests aren't Danish. If you would like to do something nice for us at the "
+"reception, why not prepare a speech?"
+msgstr ""
+
 #: weddingapp/templates/weddingapp/extra.html:6
 msgid ""
 "We would like to ask you to provide a few details so that we can meet any "
@@ -134,13 +250,24 @@ msgstr ""
 "vi muligvis skaffe transport mellem kirken og receptionen, afhængigt af det "
 "antal gæster som angiver behov for dette."
 
-#: weddingapp/templates/weddingapp/extra.html:28
-msgid "Please enter any dietary requirements for %(guest)s"
+#: weddingapp/templates/weddingapp/extra.html:25
+#, fuzzy, python-format
+#| msgid "Please enter any dietary requirements for %(guest)s"
+msgid ""
+"Please enter any dietary\n"
+"                                requirements for %(guest)s"
 msgstr "Eventuelle kostbehov for %(guest)s"
 
-#: weddingapp/templates/weddingapp/extra.html:36
+#: weddingapp/templates/weddingapp/extra.html:34
+#, fuzzy, python-format
+#| msgid ""
+#| "Would %(guest)s be interested in transport from the church to the "
+#| "reception?"
 msgid ""
-"Would %(guest)s be interested in transport from the church to the reception?"
+"Would\n"
+"                            %(guest)s be interested in transport from the "
+"church to the\n"
+"                            reception?"
 msgstr ""
 "Ville %(guest)s være interesseret i transport fra kirken til receptionen?"
 
@@ -166,30 +293,123 @@ msgstr "Gå til vores hjemmeside"
 msgid "An image of Joseph and Louise on Chelsea Embankment in London"
 msgstr "Et billede af Joseph og Louise på Chelsea Embankment i London"
 
-#: weddingapp/templates/weddingapp/index.html:6
-#, python-format
+#: weddingapp/templates/weddingapp/index.html:5
 msgid ""
-"Hello %(group)s! Welcome to our RSVP website. As stated on the invitation, "
-"please complete your RSVP by August 15th 2016."
+"Welcome to our RSVP website. Please enter the code on your invitation below "
+"to continue."
+msgstr ""
+
+#: weddingapp/templates/weddingapp/index.html:24
+msgid "Submit"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/practical.html:8
+msgid ""
+"The date of the wedding is June 3rd 2017. The ceremony is due to start at "
+"2:30pm."
+msgstr ""
+
+#: weddingapp/templates/weddingapp/practical.html:11
+#, fuzzy
+#| msgid ""
+#| "Hello %(group)s! Welcome to our RSVP website. As stated on the "
+#| "invitation, please complete your RSVP by August 15th 2016."
+msgid ""
+"As stated on the invitation, please complete your RSVP by August 15th 2016."
 msgstr ""
 "Hej %(group)s! Velkommen til vores hjemmeside hvor du/I kan sende svar. Som "
 "angivet på invitationen bedes dette gjort senest 15. august 2016."
 
-#, fuzzy
-#~| msgid "Please enter any dietary requirements for %(guest)s"
-#~ msgid ""
-#~ "Please enter any dietary\n"
-#~ "                                    requirements for %(guest)s"
+#: weddingapp/templates/weddingapp/practical.html:14
+msgid ""
+"If you have lost your RSVP code, please send us an email and we will be "
+"happy to resend it to you."
+msgstr ""
+
+#: weddingapp/templates/weddingapp/practical.html:17
+msgid ""
+"If you have sent your RSVP and later realise that you made a mistake, or "
+"would like to amend the details you submitted, please contact us as soon as "
+"possible."
+msgstr ""
+
+#: weddingapp/templates/weddingapp/practical.html:20
+msgid "You can locate our gift registry here:"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/practical.html:23
+msgid "The dress code is formal casual."
+msgstr ""
+
+#: weddingapp/templates/weddingapp/practical.html:26
+msgid "The ceremony will take place at St. George's Church, Beckenham, Kent."
+msgstr ""
+
+#: weddingapp/templates/weddingapp/practical.html:32
+msgid ""
+"While we appreciate that our guests are as keen to remember the day as we "
+"are, we have hired photographers to cover the day, and we will naturally be "
+"more than happy to share our pictures after the wedding! Therefore we kindly "
+"ask our guests to put their phones away during the ceremony, as we would "
+"prefer them to enjoy the occasion. However, once we have left the church "
+"doors, feel free to snap away!"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/practical.html:41
+msgid "The reception will take place at The Old Rectory, Brentwood, Essex."
+msgstr ""
+
+#: weddingapp/templates/weddingapp/practical.html:44
+msgid ""
+"Depending on the amount of people who express interest, we will provide "
+"transport from the church to the reception. Once we have received all of our "
+"RSVPs, we will make a decision and contact everyone who expressed an "
+"interest."
+msgstr ""
+
+#: weddingapp/templates/weddingapp/practical.html:48
+msgid "Click here to view this answer."
+msgstr ""
+
+#: weddingapp/templates/weddingapp/practical.html:52
+msgid ""
+"If you would like to toast us with a speech, please let us know by email so "
+"that this can be arranged with our toastmaster on the day."
+msgstr ""
+
+#: weddingapp/templates/weddingapp/practical.html:55
+msgid ""
+"There is a range of local taxi services for transport from the reception. "
+"We'll compile a list closer to the wedding."
+msgstr ""
+
+#: weddingapp/templates/weddingapp/practical.html:58
+msgid ""
+"There are multiple options for accommodation nearby. We'll compile a list "
+"closer to the wedding."
+msgstr ""
+
+#: weddingapp/templates/weddingapp/practical.html:61
+msgid "You can contact us either by email or"
+msgstr ""
+
+#: weddingapp/templates/weddingapp/welcome.html:6
+#, fuzzy, python-format
+#| msgid ""
+#| "Hello %(group)s! Welcome to our RSVP website. As stated on the "
+#| "invitation, please complete your RSVP by August 15th 2016."
+msgid ""
+"Hello %(group)s! Welcome to our RSVP website. As stated on the\n"
+"            invitation, please complete your RSVP by August 15th 2016."
+msgstr ""
+"Hej %(group)s! Velkommen til vores hjemmeside hvor du/I kan sende svar. Som "
+"angivet på invitationen bedes dette gjort senest 15. august 2016."
+
+#~ msgid "Please enter any dietary requirements for %(guest)s"
 #~ msgstr "Eventuelle kostbehov for %(guest)s"
 
-#, fuzzy
-#~| msgid ""
-#~| "Would %(guest)s be interested in transport from the church to the "
-#~| "reception?"
 #~ msgid ""
-#~ "Would\n"
-#~ "                                %(guest)s be interested in transport from "
-#~ "the church to the\n"
-#~ "                                reception?"
+#~ "Would %(guest)s be interested in transport from the church to the "
+#~ "reception?"
 #~ msgstr ""
 #~ "Ville %(guest)s være interesseret i transport fra kirken til receptionen?"

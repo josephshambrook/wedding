@@ -2,37 +2,40 @@
 {% load i18n %}
 {% load staticfiles %}
 
-{# Format #}
-<!-- <h5><strong>Title</strong></h5>
-<p class="m-b-2">Text.</p> -->
-
 {% block content %}
-    <h5><strong>{% trans "Traditions – Landing" %}</strong></h5>
-    <p>{% trans "There are range of curious and entertaining traditions connected to a wedding reception in Denmark. We have outlined these below so that hopefully our guests won't be (too) surprised!" %}</p>
 
-    <h5><strong>{% trans "Newly-weds Kissing" %}</strong></h5>
-    <p>{% trans "At any time during the dinner, guests can begin to clink their cutlery on the crockery, and the newly-weds must stand on their chairs and kiss. If the guests begin to trample their feet on the floor, the newly-weds must climb under the table and kiss." %}</p>
+    <h5><strong>{% trans "Wedding traditions" %}</strong></h5>
+    <p>{% trans "There are a range of curious and entertaining traditions connected to a wedding reception in Denmark. We have outlined these below so our guests hopefully won't be (too) surprised!" %}</p>
 
-    <h5><strong>{% trans "Newly-weds Leave the Table" %}</strong></h5>
-    <p>{% trans "When either of the newly-weds leave the table, the guests of the same gender as the person who has left (i.e. the opposite to the person who is still sitting), are allowed to run up to the top table and give them a cheeky kiss on the cheek!" %}</p>
+    <h5><strong>{% trans "Kissing rituals" %}</strong></h5>
+    <p>{% trans "When the guests clink their cutlery on their plates, the newlyweds must stand on their chairs and kiss. If the guests stamp their feet on the floor, they must climb under the table and kiss. " %}</p>
 
-    <h5><strong>{% trans "Cutting Brides Veil" %}</strong></h5>
-    <p>{% trans "After the dance, the bride's veil is cut or torn into pieces, and according to superstitition, the more it is ruined, the happier she will be in her marriage and for guests who take a piece home with them, this will bring them luck." %}</p>
+    <h5><strong>{% trans "Kissing rituals – when the newlyweds leave the table" %}</strong></h5>
+    <p>{% trans "When either of the newlyweds leave the table, guests of the same gender can run up to give the person left a cheeky kiss on the cheek! i.e. if the bride leaves the table, the female guests get to run up and kiss the groom, and vice versa." %}</p>
 
-    <h5><strong>{% trans "Cutting Joe's Socks" %}</strong></h5>
-    <p>{% trans "Before leaving the reception, the male guests must remove the groom's socks and cut off the toes. This is to signify that he is no longer on “frierfødder”, which translates to “proposing feet” - therefore because he is no longer on his “feet”, he won't need socks!" %}</p>
+    <h5><strong>{% trans "Cutting the brides veil" %}</strong></h5>
+    <p>{% trans "After the first dance, the bride's veil is cut or torn into pieces. According to superstition, the more it is ruined, the happier she will be in her marriage and guests should take a piece home with them as this will bring them luck." %}</p>
 
-    <h5><strong>{% trans "'Brudevals'" %}</strong></h5>
-    <p>{% trans "The traditional first dance is called “Brudevalsen” which translates to “The Bridal Waltz”. It is superstition that this must be danced before midnight, otherwise the marriage will not bear children. The bride and groom dance this with their guests around them, who after a minute or so start to close in on the couple, until the couple are no longer able to move. Here is a link to the royal wedding from 2004, where the Danish crown prince and crown princess danced their brudevals: https://www.youtube.com/watch?v=yVQarqT61ss" %}</p>
+    <h5><strong>{% trans "Cutting the grooms socks" %}</strong></h5>
+    <p>{% trans "Before leaving the reception, the male guests must remove the groom's socks and cut off the toes. This is to signify that he is no longer on “frierfødder”, which translates to “proposing feet” - essentially that he is no longer courting!" %}</p>
 
-    <h5><strong>{% trans "Pictures" %}</strong></h5>
-    <p>{% trans "While the Danish tradition is to take portraits of the couple, it is English tradition to take several formal photographs of many family constellations – so if we ask you to jump into a formal picture, please don't be taken aback!" %}</p>
+    <h5><strong>{% trans "Brudevalsen – the first dance" %}</strong></h5>
+    <p>{% trans "The traditional first dance is called “Brudevalsen”, which translates to “The Bride Waltz”. The bride and groom dance with their guests surrounding them, who after a minute or so begin to close in on the couple, until they are no longer able to move. For a visual image of what this will look like, this is a video of the royal wedding in 2004:" %}
+        <a href="https://www.youtube.com/watch?v=yVQarqT61ss">https://www.youtube.com/watch?v=yVQarqT61ss</a></p>
 
-    <h5><strong>{% trans "Confetti / rice" %}</strong></h5>
-    <p>{% trans "Upon leaving the church, it is Danish tradition to throw rice at the newly-weds (which we supply), and English tradition to throw confetti (which you supply). We have decided to go with rice." %}</p>
+    <div id="formal-pictures">
+        <h5><strong>{% trans "Formal pictures" %}</strong></h5>
+        <p>{% trans "The Danish tradition is to take portraits of the couple and the English tradition is to take photographs of many family constellations. If we ask you to jump into a formal picture, please don't be taken aback!" %}</p>
+    </div>
+
+    <div id="confetti-rice">
+        <h5><strong>{% trans "Confetti or rice" %}</strong></h5>
+        <p>{% trans "Upon leaving the church, it is Danish tradition to throw rice at the newlyweds, which they supply. It is English tradition to throw confetti, which you supply. We have decided to go with rice." %}</p>
+    </div>
 
     <div id="no-songs">
-        <h5><strong>{% trans "No Songs" %}</strong></h5>
+        <h5><strong>{% trans "Songs for an occasion" %}</strong></h5>
         <p>{% trans "While we appreciate festive additions to our reception, we're not keen on the Danish tradition of writing songs and we're also mindful that half our guests aren't Danish. If you would like to do something nice for us at the reception, why not prepare a speech?" %}</p>
     </div>
+
 {% endblock %}
