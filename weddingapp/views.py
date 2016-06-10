@@ -61,7 +61,6 @@ def check_invite(invite):
         raise Http404("Invite does not exist")
 
     if invite.rsvp_completed:
-        print 'rsvp is complete, trying to redirect'
         # if the invite has been completed, redirect to the finish page
         # return HttpResponseRedirect(reverse('weddingapp:finish', args=(invite.code,)))
         # finish_view(request, invite.code)
@@ -101,36 +100,33 @@ def welcome_view(request, code):
 
 def attend_view(request, code):
     invite = get_invite(code)
+    if request.method == 'POST':
+        try:
+            # loop through each guest and assign its attendance
+            # get all guests that were shown, then all guests sent in the POST
+            # make a comparison to find who's going and who's not
+            guests = invite.guest_set.all()
+            guests_attending = request.POST.getlist('attend')
 
-    if check_invite(invite):
-
-        if request.method == 'POST':
-            try:
-                # loop through each guest and assign its attendance
-                # get all guests that were shown, then all guests sent in the POST
-                # make a comparison to find who's going and who's not
-                guests = invite.guest_set.all()
-                guests_attending = request.POST.getlist('attend')
-
-                for guest in guests:
-                    guest.attending = guest.guest_name in guests_attending
-                    guest.save()
-            except (KeyError, Invite.DoesNotExist):
-                # Redisplay the form.
-                return render(request, 'weddingapp/attend.html', {
-                    'invite': invite,
-                    'error_message': "This invite does not exist.",
-                })
-            else:
-                # Always return an HttpResponseRedirect after successfully dealing
-                # with POST data. This prevents data from being posted twice if a
-                # user hits the Back button.
-                # go to Extras page
-                return HttpResponseRedirect('extra')
-        else:
+            for guest in guests:
+                guest.attending = guest.guest_name in guests_attending
+                guest.save()
+        except (KeyError, Invite.DoesNotExist):
+            # Redisplay the form.
             return render(request, 'weddingapp/attend.html', {
                 'invite': invite,
+                'error_message': "This invite does not exist.",
             })
+        else:
+            # Always return an HttpResponseRedirect after successfully dealing
+            # with POST data. This prevents data from being posted twice if a
+            # user hits the Back button.
+            # go to Extras page
+            return HttpResponseRedirect('extra')
+    else:
+        return render(request, 'weddingapp/attend.html', {
+            'invite': invite,
+        })
 
 
 def extra_view(request, code):
@@ -194,8 +190,6 @@ def confirm_view(request, code):
 
 def finish_view(request, code):
     invite = get_invite(code)
-
-    print invite.rsvp_completed
 
     if invite is not None and invite.rsvp_completed is False:
         invite.rsvp_completed = True
