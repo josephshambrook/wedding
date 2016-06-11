@@ -1,3 +1,5 @@
+from sys import path
+
 from django.conf import settings
 from django.forms import inlineformset_factory
 from django.shortcuts import get_object_or_404, render, render_to_response, redirect
@@ -7,6 +9,7 @@ from django.core.urlresolvers import reverse
 from django.utils import translation
 from django.utils.translation import check_for_language
 
+from ourwedding.settings import STATIC_ROOT
 from weddingapp.forms import ExtraForm
 from .models import Invite, Guest
 
@@ -68,7 +71,12 @@ def check_invite(invite):
 
 
 def home_view(request):
-    return render_to_response('weddingapp/home.html')
+    # CSS contents for inline styles
+    # speeds up load time
+    filename = 'weddingapp/static/dist/css/home_styles.css'
+    home_css = file(filename).read()
+
+    return render(request, 'weddingapp/home.html', {'home_css': home_css})
 
 
 def index_view(request):
