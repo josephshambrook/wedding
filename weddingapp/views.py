@@ -90,7 +90,7 @@ def index_view(request):
                 'code': code
             })
         else:
-            return HttpResponseRedirect(reverse('weddingapp:welcome', args=(code,)))
+            return HttpResponseRedirect(reverse('weddingapp:attend', args=(code,)))
     else:
         return render(request, 'weddingapp/index.html', {})
 

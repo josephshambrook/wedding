@@ -22,8 +22,7 @@
                     <fieldset class="form-group">
                         {{ form.diet.errors }}
                         <label for="{{ form.diet.id_for_label }}">
-                            {% blocktrans with guest=form.instance.guest_name %}Please enter any dietary
-                                requirements for {{ guest }}{% endblocktrans %}:
+                            {% blocktrans with guest=form.instance.guest_name %}Please enter any dietary requirements for {{ guest }}{% endblocktrans %}:
                         </label>
                         {{ form.diet }}
                     </fieldset>
@@ -31,9 +30,7 @@
                     <fieldset class="checkbox">
                         {{ form.transport.errors }}
                         <label for="{{ form.transport.id_for_label }}">
-                            {{ form.transport }} {% blocktrans with guest=form.instance.guest_name %}Would
-                            {{ guest }} be interested in transport from the church to the
-                            reception?{% endblocktrans %}
+                            {{ form.transport }} {% blocktrans with guest=form.instance.guest_name %}Would {{ guest }} be interested in transport from the church to the reception?{% endblocktrans %}
                         </label>
                     </fieldset>
 

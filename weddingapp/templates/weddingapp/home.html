@@ -14,6 +14,7 @@
     <link href='https://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{% static "dist/css/bootstrap-flex.min.css" %}"/>
     <link rel="stylesheet" href="{% static "dist/css/home_styles.css" %}">
+
 {#    {% if home_css %}#}
 {#    <!-- For speed!! -->#}
 {#    <style type="text/css">{{ home_css }}</style>#}
@@ -26,27 +27,27 @@
 <header>
     <div class="p-a-3 text-xs-center text-sm-left">
         <h1 class="header-title">Joseph & Louise</h1>
-        <h2 class="header-subtitle">June 3rd 2017</h2>
+        <h2 class="header-subtitle">{% trans "June 3rd 2017" %}</h2>
     </div>
 </header>
 
 <section class="section-about-wedding">
     <div class="container">
         <div class="section-title text-xs-center">
-            <h2>The Wedding</h2>
+            <h2>{% trans "The Wedding" %}</h2>
         </div>
         <div class="row text-xs-center m-t-3">
             <div class="col-lg-offset-2 col-lg-4 col-md-6 m-b-2">
                 <div class="m-b-1">
                     <img src="{% static "dist/img/wedding-rings.svg" %}" alt="" width="80">
                 </div>
-                <h5>The ceremony will take place from 2:30pm at St. George's Church, Beckenham, Kent.</h5>
+                <h5>{% trans "The ceremony will take place from 2:30pm at St. George's Church, Beckenham, Kent." %}</h5>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="m-b-1">
                     <img src="{% static "dist/img/toast.svg" %}" alt="" width="80">
                 </div>
-                <h5>The reception will take place at The Old Rectory, Brentwood, Essex.</h5>
+                <h5>{% trans "The reception will take place at The Old Rectory, Brentwood, Essex." %}</h5>
             </div>
         </div>
     </div>
@@ -63,31 +64,21 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-offset-2 col-lg-4 col-md-6 col-sm-6 col-xs-12 text-xs-center m-b-2">
-                <h2 class="m-b-1">Got Questions?</h2>
-                <a href="/faq" class="btn btn-lg btn-wedding-coral">Go to FAQs</a>
+                <h2 class="m-b-1">{% trans "Got Questions?" %}</h2>
+                <a href="/faq" class="btn btn-lg btn-wedding-coral">{% trans "Go to FAQs" %}</a>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 text-xs-center">
-                <h2 class="m-b-1">Need to RSVP?</h2>
-                <a href="/rsvp" class="btn btn-lg btn-wedding-coral">Go to RSVP site</a>
+                <h2 class="m-b-1">{% trans "Need to RSVP?" %}</h2>
+                <a href="/rsvp" class="btn btn-lg btn-wedding-coral">{% trans "Go to RSVP site" %}</a>
             </div>
         </div>
     </div>
 </section>
 
 <section class="section-contact">
-    {#    <div class="container">#}
-    {#        <div class="section-title text-xs-center">#}
-    {#            <h2>Get in touch</h2>#}
-    {#        </div>#}
-    {#        <div class="row">#}
-    {#            <div class="col-sm-12 text-xs-center">Email</div>#}
-    {#            <div class="col-sm-12 text-xs-center">Facebook</div>#}
-    {#        </div>#}
-    {#    </div>#}
-
     <div class="container">
         <div class="section-title text-xs-center">
-            <h2>Get in touch</h2>
+            <h2>{% trans "Get in touch" %}</h2>
         </div>
         <div class="row text-xs-center m-t-3">
             <a href="http://www.google.com/recaptcha/mailhide/d?k=01_r--5p3jq1yieuawqbWXdw==&amp;c=hzlMjzYWn28NHdWFV6ZN_tmtVn9LeWQWw-ffPK4cgQ0="
@@ -96,7 +87,7 @@
                 <div class="m-b-1">
                     <img src="{% static "dist/img/e-mail-envelope.svg" %}" alt="" width="80">
                 </div>
-                <h5>Email</h5>
+                <h5>{% trans "Email" %}</h5>
             </a>
 
             <a href="https://www.facebook.com/WinterJoey" target="_blank" class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
@@ -116,20 +107,16 @@
         <div class="row">
             <div class="col-xs-12">
                 <p class="m-b-0 text-xs-center">
-                    <small>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a
-                            href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a
-                            href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
-                            target="_blank">CC 3.0 BY</a>.
+                    <small>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>.</small>
+                </p>
+                <p class="m-b-0 text-xs-center">
+                    <small>
+                    {% blocktrans %}Our beautiful photos are by <a href="http://www.bennicarolweddingphotography.com/">Benni Carol Photography</a>.{% endblocktrans %}
                     </small>
                 </p>
                 <p class="m-b-0 text-xs-center">
-                    <small>Our beautiful photos are by <a href="http://www.bennicarolweddingphotography.com/">Benni
-                        Carol Photography</a>.
-                    </small>
-                </p>
-                <p class="m-b-0 text-xs-center">
-                    <small>Website design and development by <a href="http://www.josephshambrook.com">Joseph
-                        Shambrook</a> (the groom!).
+                    <small>
+                        {% blocktrans %}Website design and development by <a href="http://www.josephshambrook.com">Joseph Shambrook</a> (the groom!).{% endblocktrans %}
                     </small>
                 </p>
                 </p>
