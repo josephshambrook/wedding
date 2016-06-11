@@ -5,6 +5,7 @@
   margin-bottom: 1em;
   padding: 2em;
   position: relative;
+  overflow-x: hidden;
 
   // bunting
   &:before, &:after {
