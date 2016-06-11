@@ -333,15 +333,15 @@ msgstr "Brylluppet"
 msgid ""
 "The ceremony will take place from 2:30pm at St. George's Church, Beckenham, "
 "Kent."
-msgstr "Ceremonien finder sted fra 14:30 på St. George's Church, Beckenham, Kent."
+msgstr "Brylluppet finder sted fra 14:30 i St. George's Church, Beckenham, Kent."
 
 #: weddingapp/templates/weddingapp/home.html:51
 msgid "The reception will take place at The Old Rectory, Brentwood, Essex."
-msgstr "Receptionen finder sted på The Old Rectory, Brentwood, Essex."
+msgstr "Receptionen finder sted ved The Old Rectory, Brentwood, Essex."
 
 #: weddingapp/templates/weddingapp/home.html:68
 msgid "Got Questions?"
-msgstr "Fik Spørgsmål?"
+msgstr "Har du Spørgsmål?"
 
 #: weddingapp/templates/weddingapp/home.html:69
 msgid "Go to FAQs"
@@ -349,15 +349,15 @@ msgstr "Gå til ofte stillede spørgsmål"
 
 #: weddingapp/templates/weddingapp/home.html:72
 msgid "Need to RSVP?"
-msgstr "Behov for at svar udbedes?"
+msgstr "Vil du sende svar?"
 
 #: weddingapp/templates/weddingapp/home.html:73
 msgid "Go to RSVP site"
-msgstr "Gå til svar udbedes websted"
+msgstr "Gå til svar side"
 
 #: weddingapp/templates/weddingapp/home.html:82
 msgid "Get in touch"
-msgstr "Kom i kontakt"
+msgstr "Kontakt os"
 
 #: weddingapp/templates/weddingapp/home.html:91
 msgid "Email"
@@ -367,7 +367,7 @@ msgstr "E-mail"
 msgid ""
 "Our beautiful photos are by <a href=\"http://www."
 "bennicarolweddingphotography.com/\">Benni Carol Photography</a>."
-msgstr "Vores smukke fotos er af <a href=\"http://www.bennicarolweddingphotography.com\">Benni Carol Photography</a>."
+msgstr "Vores smukke billeder er af <a href=\"http://www.bennicarolweddingphotography.com\">Benni Carol Photography</a>."
 
 #: weddingapp/templates/weddingapp/home.html:120
 msgid ""
