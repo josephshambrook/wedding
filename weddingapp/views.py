@@ -1,15 +1,11 @@
-from sys import path
-
 from django.conf import settings
 from django.forms import inlineformset_factory
-from django.shortcuts import get_object_or_404, render, render_to_response, redirect
-from django.http import HttpResponseRedirect, Http404, HttpResponse
+from django.shortcuts import render, render_to_response, redirect
+from django.http import HttpResponseRedirect, Http404
 from django.template import RequestContext
 from django.core.urlresolvers import reverse
 from django.utils import translation
 from django.utils.translation import check_for_language
-
-from ourwedding.settings import STATIC_ROOT
 from weddingapp.forms import ExtraForm
 from .models import Invite, Guest
 
@@ -100,8 +96,7 @@ def welcome_view(request, code):
     check_invite(invite)
 
     context = {
-        'invite': invite,
-        # 'nextUrl': reverse('weddingapp:attend', args=[invite.code]),
+        'invite': invite
     }
     return render(request, 'weddingapp/welcome.html', context)
 
