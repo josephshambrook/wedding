@@ -1,7 +1,7 @@
 from django.conf.urls import include, url
 from django.contrib import admin
 
-from weddingapp.views import home_view
+from weddingapp.views import home_view, gifts_view
 
 urlpatterns = [
     url(r'^$', home_view, name='home'),
@@ -9,4 +9,5 @@ urlpatterns = [
     url(r'^faq/', include('weddingapp.faq_urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^i18n/', include('django.conf.urls.i18n')),
+    url(r'^gifts/', gifts_view, name='gifts'),
 ]

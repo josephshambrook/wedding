@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Invite, Guest
+from .models import Invite, Guest, Gift
 
 
 class GuestInline(admin.TabularInline):
@@ -25,5 +25,10 @@ class GuestAdmin(admin.ModelAdmin):
     list_filter = ('guest_name', 'invite', 'attending',)
 
 
+class GiftAdmin(admin.ModelAdmin):
+    list_display = ('item', 'url')
+
+
 admin.site.register(Invite, InviteAdmin)
 admin.site.register(Guest, GuestAdmin)
+admin.site.register(Gift, GiftAdmin)

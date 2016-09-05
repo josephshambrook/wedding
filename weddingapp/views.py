@@ -7,7 +7,7 @@ from django.core.urlresolvers import reverse
 from django.utils import translation
 from django.utils.translation import check_for_language
 from weddingapp.forms import ExtraForm
-from .models import Invite, Guest
+from .models import Invite, Guest, Gift
 
 
 siteLanguages = (('en', 'English'), ('da', 'Danish'))
@@ -73,6 +73,18 @@ def home_view(request):
     home_css = file(filename).read()
 
     return render(request, 'weddingapp/home.html', {'home_css': home_css})
+
+
+def gifts_view(request):
+    # CSS contents for inline styles
+    # speeds up load time
+    filename = 'weddingapp/static/dist/css/home_styles.css'
+    home_css = file(filename).read()
+
+    # giftlist = gift_list
+    giftlist = Gift.objects.all()
+
+    return render(request, 'weddingapp/giftlist.html', {'home_css': home_css, 'giftlist': giftlist})
 
 
 def index_view(request):

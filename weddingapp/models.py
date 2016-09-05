@@ -45,3 +45,12 @@ class Guest(models.Model):
 
     def __str__(self):
         return self.guest_name
+
+
+@python_2_unicode_compatible
+class Gift(models.Model):
+    item = models.CharField(max_length=200)
+    url = models.URLField()
+
+    def __str__(self):
+        return self.item

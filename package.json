@@ -26,5 +26,8 @@
     "node-sass": "^3.7.0",
     "postcss-cli": "^2.5.2",
     "watch": "^0.18.0"
+  },
+  "dependencies": {
+    "pg": "6.0.2"
   }
 }
