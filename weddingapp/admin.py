@@ -13,7 +13,7 @@ class InviteAdmin(admin.ModelAdmin):
     # define which columns show
     list_display = ('group_name', 'code', 'group_count',)
     # define which filters to show
-    list_filter = ('code',)
+    # list_filter = ('code',)
     # show guest data inline
     inlines = [GuestInline]
 
@@ -22,11 +22,11 @@ class GuestAdmin(admin.ModelAdmin):
     # define which columns show
     list_display = ('guest_name', 'attending', 'diet', 'transport',)
     # define which filters to show
-    list_filter = ('guest_name', 'invite', 'attending',)
+    list_filter = ('attending', 'transport')
 
 
 class GiftAdmin(admin.ModelAdmin):
-    list_display = ('item', 'url')
+    list_display = ('item', 'quantity', 'url',)
 
 
 admin.site.register(Invite, InviteAdmin)

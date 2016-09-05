@@ -13,7 +13,7 @@
             <div class="col-md-offset-1 col-lg-offset-2 col-lg-8 col-md-10 col-sm-12 col-xs-12">
 {#                <p class="lead">Below is our full gift list. To be able to have a variety of gifts whilst not being limited to a certain shop, we have decided to list everything here. To avoid duplicates, we have asked ____ and _____ to help us co-ordinate which gifts to buy. Therefore, before purchasing a gift for us, please contact [insert details]</p>#}
                 <p class="lead">We're still gradually adding gifts. Hold tight!</p>
-                <table>
+                <table class="table">
 {#                    <tr>#}
 {#                        <th>Item</th>#}
 {#                        <th>Amount</th>#}
@@ -69,10 +69,22 @@
 {#                        <td>1</td>#}
 {#                        <td>http://www.lakeland.co.uk/70771/-20-Piece-Cutter-Set</td>#}
 {#                    </tr>#}
-
-                    {% for gift in giftlist %}
-                        <div>{{ gift.item }}</div>
-                    {% endfor %}
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>URL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for gift in giftlist %}
+                            <tr>
+                                <td>{{ gift.item }}</td>
+                                <td>
+                                    <a href="{{ gift.url }}">Link</a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
                 </table>
             </div>
         </div>
