@@ -12,17 +12,29 @@
         <div class="row">
 
             {% for hotel in hotels_list %}
-                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                     <div class="card">
-                        <img class="card-img-top" src="{{ hotel.static_map_link }}" alt="Map to {{ hotel.name }}">
+                        {% if hotel.static_map_link %}
+                            <img class="card-img-top img-fluid" src="{{ hotel.static_map_link }}" alt="Map to
+{{ hotel.name }}">
+                        {% endif %}
                         <div class="card-block">
                             <h4 class="card-title">{{ hotel.name }}</h4>
                             <div class="card-text">
-                                <p>{{ hotel.address }}</p>
-                                <p>{{ hotel.phone_number }}</p>
+                                {% if hotel.address %}
+                                    <p>{{ hotel.address }}</p>
+                                {% endif %}
+
+                                {% if hotel.phone_number %}
+                                    <p>{{ hotel.phone_number }}</p>
+                                {% endif %}
                             </div>
-                            <a href="{{ hotel.google_link }}" class="btn btn-wedding-coral">Google Maps</a>
-                            <a href="{{ hotel.website_link }}" class="btn btn-wedding-coral">Website</a>
+                            {% if hotel.google_link %}
+                                <a href="{{ hotel.google_link }}" class="btn btn-wedding-coral">Google Maps</a>
+                            {% endif %}
+                            {% if hotel.website_link %}
+                                <a href="{{ hotel.website_link }}" class="btn btn-wedding-coral">Website</a>
+                            {% endif %}
                         </div>
                     </div>
                 </div>

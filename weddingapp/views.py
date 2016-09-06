@@ -110,7 +110,7 @@ def construct_maps_link(postcode):
 
     maps_link += "key=AIzaSyBg35fbhMM1PUchxu3-U0otlG0BL-Tgryc"
     maps_link += "&autoscale=false"
-    maps_link += "&size=300x180"
+    maps_link += "&size=520x160"
     maps_link += "&maptype=roadmap"
     maps_link += "&format=png"
     maps_link += "&visual_refresh=true"
