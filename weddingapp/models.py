@@ -64,7 +64,7 @@ GIFT_CATEGORIES = (
 @python_2_unicode_compatible
 class Gift(models.Model):
     item = models.CharField(max_length=200)
-    quantity = models.IntegerField(blank=True)
+    quantity = models.IntegerField(blank=True, null=True)
     actual = models.CharField(
         max_length=200,
         choices=(('exact', 'Exact'), ('similar', 'Similar')),
