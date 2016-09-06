@@ -25,7 +25,7 @@
                     </thead>
                     <tbody>
                         {% for gift in giftlist %}
-                            <tr {% if gift.quantity < 1 %}class="text-muted" style="text-decoration: line-through;"{% endif %}>
+                            <tr {% if gift.quantity == 0 %}class="text-muted" style="text-decoration: line-through;"{% endif %}>
                                 <td>{{ gift.item }}</td>
                                 <td>{{ gift.get_category_display }}</td>
                                 <td>{{ gift.quantity }}</td>
