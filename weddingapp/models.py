@@ -80,3 +80,13 @@ class Gift(models.Model):
 
     def __str__(self):
         return self.item
+
+
+class Hotel(models.Model):
+    name = models.CharField(max_length=200)
+    address = models.CharField(max_length=200)
+    postcode = models.CharField(max_length=10)
+    phone_regex = RegexValidator(regex=r'^\+?1?\d{9,15}$', message="")
+    phone_number = models.CharField(validators=[phone_regex], max_length=12, blank=True)
+    google_link = models.URLField(blank=True, max_length=200)
+    website_link = models.URLField(blank=True, max_length=200)

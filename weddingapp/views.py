@@ -1,3 +1,5 @@
+import urllib
+
 from django.conf import settings
 from django.forms import inlineformset_factory
 from django.shortcuts import render, render_to_response, redirect
@@ -6,8 +8,10 @@ from django.template import RequestContext
 from django.core.urlresolvers import reverse
 from django.utils import translation
 from django.utils.translation import check_for_language
+from pip._vendor.requests.packages.urllib3.util import url
+
 from weddingapp.forms import ExtraForm
-from .models import Invite, Guest, Gift
+from .models import Invite, Guest, Gift, Hotel
 
 
 siteLanguages = (('en', 'English'), ('da', 'Danish'))
@@ -84,6 +88,41 @@ def gifts_view(request):
     giftlist = Gift.objects.order_by('category', 'item').all()
 
     return render(request, 'weddingapp/giftlist.html', {'home_css': home_css, 'giftlist': giftlist})
+
+
+def hotels_view(request):
+    # CSS contents for inline styles
+    # speeds up load time
+    filename = 'weddingapp/static/dist/css/home_styles.css'
+    home_css = file(filename).read()
+
+    hotels_list = Hotel.objects.all()
+
+    for hotel in hotels_list:
+        link = construct_maps_link(hotel.postcode)
+        hotel.static_map_link = link
+
+    return render(request, 'weddingapp/hotels.html', {'home_css': home_css, 'hotels_list': hotels_list})
+
+
+def construct_maps_link(postcode):
+    maps_link = "http://maps.googleapis.com/maps/api/staticmap?"
+
+    maps_link += "key=AIzaSyBg35fbhMM1PUchxu3-U0otlG0BL-Tgryc"
+    maps_link += "&autoscale=false"
+    maps_link += "&size=300x180"
+    maps_link += "&maptype=roadmap"
+    maps_link += "&format=png"
+    maps_link += "&visual_refresh=true"
+
+    label = "&markers=size:mid%7Ccolor:0x04ca0e%7Clabel:%7C" + postcode
+    label += "&markers=size:mid%7Ccolor:0xff0000%7Clabel:%7CCM13 3SW"
+
+    label = label.replace(" ", "+")
+
+    maps_link += label
+
+    return maps_link
 
 
 def index_view(request):
