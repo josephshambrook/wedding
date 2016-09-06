@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-22 21:20+0000\n"
+"POT-Creation-Date: 2016-09-06 21:00+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ourwedding/settings.py:132
+#: ourwedding/settings.py:133
 msgid "Danish"
 msgstr "Dansk"
 
-#: ourwedding/settings.py:133
+#: ourwedding/settings.py:134
 msgid "English"
 msgstr "Engelsk"
 
@@ -37,8 +37,8 @@ msgid ""
 msgstr ""
 "Ville /guest_name/ være interesseret i transport fra kirken til receptionen?"
 
-#: weddingapp/templates/base.html:39
-#: weddingapp/templates/weddingapp/home.html:30
+#: weddingapp/templates/base.html:45
+#: weddingapp/templates/weddingapp/home.html:36
 msgid "June 3rd 2017"
 msgstr "3. juni 2017"
 
@@ -144,9 +144,9 @@ msgid ""
 "wedding reception in Denmark. We have outlined these below so our guests "
 "hopefully won't be (too) surprised!"
 msgstr ""
-"Der findes en række pudsige og underholdende traditioner i finbindelse "
-"med et bryllupsmiddag i Danmark. Vi har beskrevet disse nedenfor så "
-"vores gæster forhåbenligt ikke bliver (for) overraskede!"
+"Der findes en række pudsige og underholdende traditioner i finbindelse med "
+"et bryllupsmiddag i Danmark. Vi har beskrevet disse nedenfor så vores gæster "
+"forhåbenligt ikke bliver (for) overraskede!"
 
 #: weddingapp/templates/weddingapp/cultural.html:10
 msgid "Kissing rituals"
@@ -188,10 +188,9 @@ msgid ""
 "her marriage and guests should take a piece home with them as this will "
 "bring them luck."
 msgstr ""
-"Efter den første dans er brudens slør klippet er revet i stykker. "
-"Overtro siger at jo mere ødelagt det bliver, jo lykkeligere vil hun blive "
-"i sit ægteskab og gæster bør tage et stykke med hjem da dette vil bringe "
-"dem held. "
+"Efter den første dans er brudens slør klippet er revet i stykker. Overtro "
+"siger at jo mere ødelagt det bliver, jo lykkeligere vil hun blive i sit "
+"ægteskab og gæster bør tage et stykke med hjem da dette vil bringe dem held. "
 
 #: weddingapp/templates/weddingapp/cultural.html:19
 msgid "Cutting the grooms socks"
@@ -325,42 +324,44 @@ msgstr "Gå til vores hjemmeside"
 msgid "An image of Joseph and Louise on Chelsea Embankment in London"
 msgstr "Et billede af Joseph og Louise på Chelsea Embankment i London"
 
-#: weddingapp/templates/weddingapp/home.html:37
+#: weddingapp/templates/weddingapp/home.html:43
 msgid "The Wedding"
 msgstr "Brylluppet"
 
-#: weddingapp/templates/weddingapp/home.html:44
+#: weddingapp/templates/weddingapp/home.html:50
 msgid ""
 "The ceremony will take place from 2:30pm at St. George's Church, Beckenham, "
 "Kent."
 msgstr ""
 "Brylluppet finder sted fra 14:30 i St. George's Church, Beckenham, Kent."
 
-#: weddingapp/templates/weddingapp/home.html:50
-msgid "The reception will take place at The Old Rectory, Brentwood, Essex."
-msgstr "Receptionen finder sted ved The Old Rectory, Brentwood, Essex."
+#: weddingapp/templates/weddingapp/home.html:56
+msgid ""
+"The reception and dinner will take place at The Old Rectory, Brentwood, "
+"Essex."
+msgstr "Reception og middag finder sted ved The Old Rectory, Brentwood, Essex."
 
-#: weddingapp/templates/weddingapp/home.html:67
+#: weddingapp/templates/weddingapp/home.html:73
 msgid "Got Questions?"
 msgstr "Har du Spørgsmål?"
 
-#: weddingapp/templates/weddingapp/home.html:68
+#: weddingapp/templates/weddingapp/home.html:74
 msgid "Go to FAQs"
 msgstr "Gå til ofte stillede spørgsmål"
 
-#: weddingapp/templates/weddingapp/home.html:71
+#: weddingapp/templates/weddingapp/home.html:77
 msgid "Need to RSVP?"
 msgstr "Vil du sende svar?"
 
-#: weddingapp/templates/weddingapp/home.html:72
+#: weddingapp/templates/weddingapp/home.html:78
 msgid "Go to RSVP site"
 msgstr "Gå til svar side"
 
-#: weddingapp/templates/weddingapp/home.html:81
+#: weddingapp/templates/weddingapp/home.html:87
 msgid "Get in touch"
 msgstr "Kontakt os"
 
-#: weddingapp/templates/weddingapp/home.html:111
+#: weddingapp/templates/weddingapp/home.html:117
 msgid ""
 "Our beautiful photos are by <a href=\"http://www."
 "bennicarolweddingphotography.com/\">Benni Carol Photography</a>."
@@ -368,7 +369,7 @@ msgstr ""
 "Vores smukke billeder er af <a href=\"http://www."
 "bennicarolweddingphotography.com\">Benni Carol Photography</a>."
 
-#: weddingapp/templates/weddingapp/home.html:116
+#: weddingapp/templates/weddingapp/home.html:122
 msgid ""
 "Website design and development by <a href=\"http://www.josephshambrook.com"
 "\">Joseph Shambrook</a> (the groom!)."
@@ -533,8 +534,8 @@ msgid ""
 "There are multiple options for accommodation nearby. We'll compile a list "
 "closer to the wedding."
 msgstr ""
-"Der er en række muligheder for overnatning i nærheden af receptionen. Vi "
-"vil sammensætte en liste nærmere brylluppet."
+"Der er en række muligheder for overnatning i nærheden af receptionen. Vi vil "
+"sammensætte en liste nærmere brylluppet."
 
 #: weddingapp/templates/weddingapp/practical.html:60
 msgid "Contact Details"
@@ -545,6 +546,7 @@ msgid "You can contact us either by email or Facebook."
 msgstr "Vi kan kontaktes enten på email eller på facebook."
 
 #: weddingapp/templates/weddingapp/welcome.html:6
+#, python-format
 msgid ""
 "Hello %(group)s! Welcome to our RSVP website. As stated on the\n"
 "            invitation, please complete your RSVP by August 15th 2016."

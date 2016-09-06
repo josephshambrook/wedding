@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5d821ce-c2c2-4f59-b0f6-efd6de490c7f" name="Default" comment="Fix for views">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/weddingapp/templates/weddingapp/hotels.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ourwedding/urls.py" afterPath="$PROJECT_DIR$/ourwedding/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weddingapp/admin.py" afterPath="$PROJECT_DIR$/weddingapp/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weddingapp/models.py" afterPath="$PROJECT_DIR$/weddingapp/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weddingapp/views.py" afterPath="$PROJECT_DIR$/weddingapp/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/locale/da/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/locale/da/LC_MESSAGES/django.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weddingapp/templates/weddingapp/home.html" afterPath="$PROJECT_DIR$/weddingapp/templates/weddingapp/home.html" />
     </list>
     <ignored path="ourwedding.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,6 +40,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/weddingapp/templates/weddingapp/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="332">
+              <caret line="55" column="54" selection-start-line="55" selection-start-column="54" selection-end-line="55" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="django.po" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/locale/da/LC_MESSAGES/django.po">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="249">
+              <caret line="341" column="27" selection-start-line="341" selection-start-column="27" selection-end-line="341" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/weddingapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -57,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hotels.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hotels.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/weddingapp/templates/weddingapp/hotels.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+            <state relative-caret-position="105">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -184,8 +199,6 @@
         <option value="$PROJECT_DIR$/weddingapp/templates/weddingapp/index.html" />
         <option value="$PROJECT_DIR$/weddingapp/templates/weddingapp/extra.html" />
         <option value="$PROJECT_DIR$/weddingapp/static/src/scss/parts/components.scss" />
-        <option value="$PROJECT_DIR$/weddingapp/templates/weddingapp/home.html" />
-        <option value="$PROJECT_DIR$/locale/da/LC_MESSAGES/django.po" />
         <option value="$PROJECT_DIR$/weddingapp/gifts.py" />
         <option value="$PROJECT_DIR$/weddingapp/migrations/0021_auto_20160906_0749.py" />
         <option value="$PROJECT_DIR$/weddingapp/templates/weddingapp/giftlist.html" />
@@ -197,6 +210,8 @@
         <option value="$PROJECT_DIR$/weddingapp/models.py" />
         <option value="$PROJECT_DIR$/weddingapp/views.py" />
         <option value="$PROJECT_DIR$/weddingapp/templates/weddingapp/hotels.html" />
+        <option value="$PROJECT_DIR$/weddingapp/templates/weddingapp/home.html" />
+        <option value="$PROJECT_DIR$/locale/da/LC_MESSAGES/django.po" />
       </list>
     </option>
   </component>
@@ -1030,13 +1045,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/locale/da/LC_MESSAGES/django.po">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2655">
-          <caret line="177" column="41" selection-start-line="177" selection-start-column="41" selection-end-line="177" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/weddingapp/templates/weddingapp/confirm.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -1055,14 +1063,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weddingapp/templates/weddingapp/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1065">
-          <caret line="71" column="24" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="76" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1257,8 +1257,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/weddingapp/templates/weddingapp/hotels.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        <state relative-caret-position="105">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weddingapp/templates/weddingapp/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="55" column="54" selection-start-line="55" selection-start-column="54" selection-end-line="55" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/locale/da/LC_MESSAGES/django.po">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="341" column="27" selection-start-line="341" selection-start-column="27" selection-end-line="341" selection-end-column="27" />
           <folding />
         </state>
       </provider>
