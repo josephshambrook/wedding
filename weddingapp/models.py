@@ -47,11 +47,36 @@ class Guest(models.Model):
         return self.guest_name
 
 
+GIFT_CATEGORIES = (
+    ('kitchen', 'Kitchen'),
+    ('electric', 'Electric Items'),
+    ('crockery', 'Crockery'),
+    ('glass', 'Glasses'),
+    ('cutlery', 'Cutlery'),
+    ('knives', 'Knives'),
+    ('pots_pans', 'Pots and Pans'),
+    ('linens', 'Linens'),
+    ('house', 'Houseware'),
+    ('other', 'Other')
+)
+
+
 @python_2_unicode_compatible
 class Gift(models.Model):
     item = models.CharField(max_length=200)
     quantity = models.IntegerField()
-    url = models.URLField()
+    actual = models.CharField(
+        max_length=15,
+        choices=(('exact', 'Exact'), ('similar', 'Similar')),
+        default='exact',
+        blank=True
+    )
+    category = models.CharField(
+        max_length=20,
+        choices=GIFT_CATEGORIES,
+        default='kitchen'
+    )
+    url = models.URLField(blank=True)
 
     def __str__(self):
         return self.item

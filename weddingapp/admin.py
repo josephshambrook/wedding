@@ -26,7 +26,8 @@ class GuestAdmin(admin.ModelAdmin):
 
 
 class GiftAdmin(admin.ModelAdmin):
-    list_display = ('item', 'quantity', 'url',)
+    list_display = ('item', 'quantity', 'actual', 'category', 'url',)
+    list_filter = ('category', 'actual')
 
 
 admin.site.register(Invite, InviteAdmin)

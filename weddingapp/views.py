@@ -81,8 +81,7 @@ def gifts_view(request):
     filename = 'weddingapp/static/dist/css/home_styles.css'
     home_css = file(filename).read()
 
-    # giftlist = gift_list
-    giftlist = Gift.objects.all()
+    giftlist = Gift.objects.order_by('category', 'item').all()
 
     return render(request, 'weddingapp/giftlist.html', {'home_css': home_css, 'giftlist': giftlist})
 

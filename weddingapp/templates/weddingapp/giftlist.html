@@ -13,74 +13,27 @@
             <div class="col-md-offset-1 col-lg-offset-2 col-lg-8 col-md-10 col-sm-12 col-xs-12">
 {#                <p class="lead">Below is our full gift list. To be able to have a variety of gifts whilst not being limited to a certain shop, we have decided to list everything here. To avoid duplicates, we have asked ____ and _____ to help us co-ordinate which gifts to buy. Therefore, before purchasing a gift for us, please contact [insert details]</p>#}
                 <p class="lead">We're still gradually adding gifts. Hold tight!</p>
-                <table class="table">
-{#                    <tr>#}
-{#                        <th>Item</th>#}
-{#                        <th>Amount</th>#}
-{#                        <th>Link</th>#}
-{#                    </tr>#}
-{#                    #}
-{#                    tr>td*3#}
-{##}
-{#                    <tr>#}
-{#                        <td>Apron</td>#}
-{#                        <td>1</td>#}
-{#                        <td></td>#}
-{#                    </tr>#}
-{##}
-{#                    <tr>#}
-{#                        <td>Pepper mill</td>#}
-{#                        <td>1</td>#}
-{#                        <td></td>#}
-{#                    </tr>#}
-{##}
-{#                    <tr>#}
-{#                        <td>Book stand</td>#}
-{#                        <td>1</td>#}
-{#                        <td>http://www.lakeland.co.uk/71289/Kitchen-Craft-Cast-Iron-Book-Stand</td>#}
-{#                    </tr>#}
-{##}
-{#                    <tr>#}
-{#                        <td>Trivets</td>#}
-{#                        <td>2</td>#}
-{#                        <td>https://toolworld.dk/Z-line-Afsaetningsrist-metal-22-x-17-cm-p103816</td>#}
-{#                    </tr>#}
-{##}
-{#                    <tr>#}
-{#                        <td>Bread basket</td>#}
-{#                        <td>2</td>#}
-{#                        <td>http://www.stelton.com/da/stor-broedpose-sort-sort-p-3122</td>#}
-{#                    </tr>#}
-{##}
-{#                    <tr>#}
-{#                        <td>Casserole Dishes (Pyrex)</td>#}
-{#                        <td></td>#}
-{#                        <td></td>#}
-{#                    </tr>#}
-{##}
-{#                    <tr>#}
-{#                        <td>Citrus Presser</td>#}
-{#                        <td>1</td>#}
-{#                        <td>http://www.lakeland.co.uk/17812/Trudeau-Lemon-Squeezer</td>#}
-{#                    </tr>#}
-{##}
-{#                    <tr>#}
-{#                        <td>Cutter set, 20 pieces</td>#}
-{#                        <td>1</td>#}
-{#                        <td>http://www.lakeland.co.uk/70771/-20-Piece-Cutter-Set</td>#}
-{#                    </tr>#}
+                <table class="table table-bordered table-hover table-responsive">
                     <thead>
                         <tr>
                             <th>Item</th>
-                            <th>URL</th>
+                            <th>Category</th>
+                            <th>Quantity</th>
+                            <th>Actual Item?</th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody>
                         {% for gift in giftlist %}
-                            <tr>
+                            <tr {% if gift.quantity < 1 %}class="text-muted" style="text-decoration: line-through;"{% endif %}>
                                 <td>{{ gift.item }}</td>
+                                <td>{{ gift.get_category_display }}</td>
+                                <td>{{ gift.quantity }}</td>
+                                <td>{{ gift.get_actual_display }}</td>
                                 <td>
-                                    <a href="{{ gift.url }}">Link</a>
+                                    {% if gift.url and gift.quantity > 0 %}
+                                        <a href="{{ gift.url }}" target="_blank" rel="nofollow">Link</a>
+                                    {% endif %}
                                 </td>
                             </tr>
                         {% endfor %}
