@@ -66,17 +66,17 @@ class Gift(models.Model):
     item = models.CharField(max_length=200)
     quantity = models.IntegerField()
     actual = models.CharField(
-        max_length=15,
+        max_length=200,
         choices=(('exact', 'Exact'), ('similar', 'Similar')),
         default='exact',
         blank=True
     )
     category = models.CharField(
-        max_length=20,
+        max_length=200,
         choices=GIFT_CATEGORIES,
         default='kitchen'
     )
-    url = models.URLField(blank=True)
+    url = models.URLField(blank=True, max_length=200)
 
     def __str__(self):
         return self.item
