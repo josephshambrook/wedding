@@ -24,10 +24,10 @@
                     </thead>
                     <tbody>
                         {% for gift in giftlist %}
-                            <tr {% if gift.quantity == 0 %}class="text-muted" style="text-decoration: line-through;"{% endif %}>
+                            <tr>
                                 <td>{{ gift.item }}</td>
                                 <td>{{ gift.get_category_display }}</td>
-                                <td>{{ gift.quantity }}</td>
+                                <td>{% if gift.quantity and gift.quantity > 0 %}{{ gift.quantity }}{% endif %}</td>
                                 <td>{{ gift.get_actual_display }}</td>
                                 <td>
                                     {% if gift.url and gift.quantity > 0 %}
