@@ -4,8 +4,9 @@
     <list default="true" id="f5d821ce-c2c2-4f59-b0f6-efd6de490c7f" name="Default" comment="Fix for views">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weddingapp/static/dist/css/site_styles.css" afterPath="$PROJECT_DIR$/weddingapp/static/dist/css/site_styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weddingapp/static/src/scss/parts/base.scss" afterPath="$PROJECT_DIR$/weddingapp/static/src/scss/parts/base.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weddingapp/static/src/scss/parts/components.scss" afterPath="$PROJECT_DIR$/weddingapp/static/src/scss/parts/components.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weddingapp/templates/base.html" afterPath="$PROJECT_DIR$/weddingapp/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weddingapp/templates/weddingapp/practical.html" afterPath="$PROJECT_DIR$/weddingapp/templates/weddingapp/practical.html" />
     </list>
     <ignored path="ourwedding.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,21 +75,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/weddingapp/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+            <state relative-caret-position="240">
+              <caret line="37" column="49" selection-start-line="37" selection-start-column="49" selection-end-line="37" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="components.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="base.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/weddingapp/static/src/scss/parts/base.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="29" column="6" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="components.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/weddingapp/static/src/scss/parts/components.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+            <state relative-caret-position="555">
+              <caret line="50" column="3" selection-start-line="50" selection-start-column="3" selection-end-line="50" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -114,21 +125,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="giftlist.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/weddingapp/templates/weddingapp/giftlist.html">
+      <file leaf-file-name="layout_faq.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/weddingapp/templates/layout_faq.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            <state relative-caret-position="180">
+              <caret line="12" column="77" selection-start-line="12" selection-start-column="77" selection-end-line="12" selection-end-column="77" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout_faq.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/weddingapp/templates/layout_faq.html">
+      <file leaf-file-name="practical.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/weddingapp/templates/weddingapp/practical.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            <state relative-caret-position="345">
+              <caret line="59" column="11" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -175,7 +186,6 @@
         <option value="$PROJECT_DIR$/robots.txt" />
         <option value="$PROJECT_DIR$/weddingapp/templates/weddingapp/finish.html" />
         <option value="$PROJECT_DIR$/weddingapp/templates/weddingapp/cultural.html" />
-        <option value="$PROJECT_DIR$/weddingapp/templates/weddingapp/practical.html" />
         <option value="$PROJECT_DIR$/browserlist" />
         <option value="$PROJECT_DIR$/weddingapp/static/dist/css/browserslist" />
         <option value="$PROJECT_DIR$/weddingapp/templates/weddingapp/attend.html" />
@@ -197,17 +207,18 @@
         <option value="$PROJECT_DIR$/ourwedding/settings.py" />
         <option value="$PROJECT_DIR$/weddingapp/templates/weddingapp/index.html" />
         <option value="$PROJECT_DIR$/weddingapp/static/src/scss/pages/rsvp_styles.scss" />
-        <option value="$PROJECT_DIR$/weddingapp/static/src/scss/parts/base.scss" />
         <option value="$PROJECT_DIR$/weddingapp/static/src/scss/pages/site_styles.scss" />
         <option value="$PROJECT_DIR$/weddingapp/static/vendor/js/collapse.min.js" />
-        <option value="$PROJECT_DIR$/weddingapp/templates/layout_faq.html" />
         <option value="$PROJECT_DIR$/weddingapp/templates/layout_rsvp.html" />
         <option value="$PROJECT_DIR$/weddingapp/templates/weddingapp/giftlist.html" />
         <option value="$PROJECT_DIR$/weddingapp/templates/weddingapp/hotels.html" />
         <option value="$PROJECT_DIR$/weddingapp/templates/weddingapp/home.html" />
         <option value="$PROJECT_DIR$/weddingapp/views.py" />
-        <option value="$PROJECT_DIR$/weddingapp/static/src/scss/parts/components.scss" />
+        <option value="$PROJECT_DIR$/weddingapp/static/src/scss/parts/base.scss" />
+        <option value="$PROJECT_DIR$/weddingapp/templates/layout_faq.html" />
         <option value="$PROJECT_DIR$/weddingapp/templates/base.html" />
+        <option value="$PROJECT_DIR$/weddingapp/templates/weddingapp/practical.html" />
+        <option value="$PROJECT_DIR$/weddingapp/static/src/scss/parts/components.scss" />
       </list>
     </option>
   </component>
@@ -1199,13 +1210,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/browserlist" />
-    <entry file="file://$PROJECT_DIR$/weddingapp/templates/weddingapp/practical.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="39" column="115" selection-start-line="39" selection-start-column="115" selection-end-line="39" selection-end-column="115" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/weddingapp/static/dist/css/browserslist">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1437,14 +1441,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weddingapp/static/src/scss/parts/base.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/weddingapp/static/vendor/js/collapse.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1503,30 +1499,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weddingapp/static/src/scss/pages/site_styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weddingapp/templates/layout_faq.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weddingapp/static/src/scss/parts/components.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/weddingapp/templates/weddingapp/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1590">
@@ -1535,10 +1507,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/weddingapp/static/src/scss/parts/base.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="6" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weddingapp/templates/layout_faq.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="77" selection-start-line="12" selection-start-column="77" selection-end-line="12" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/weddingapp/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+        <state relative-caret-position="240">
+          <caret line="37" column="49" selection-start-line="37" selection-start-column="49" selection-end-line="37" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weddingapp/templates/weddingapp/practical.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="59" column="11" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weddingapp/static/src/scss/pages/site_styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weddingapp/static/src/scss/parts/components.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="50" column="3" selection-start-line="50" selection-start-column="3" selection-end-line="50" selection-end-column="3" />
           <folding />
         </state>
       </provider>
