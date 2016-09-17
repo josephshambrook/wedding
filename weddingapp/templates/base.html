@@ -18,42 +18,56 @@
     <title>{% block title %}Joseph & Louise{% endblock %}</title>
 
     <link href='https://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="{% static "dist/css/bootstrap-flex.min.css" %}"/>
-    {% block styles %}{% endblock %}
+    <link rel="stylesheet" href="{% static "vendor/css/bootstrap-flex.min.css" %}"/>
+    <link rel="stylesheet" href="{% static "dist/css/site_styles.css" %}">
 </head>
 
 <body>
-<div class="small-header text-xs-center">
-{#    <div class="language-picker">#}
-{#        <form action="{% url 'weddingapp.views.set_language' %}" method="post">#}
-{#            {% csrf_token %}#}
-{#            <input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:' }}"/>#}
-{#            <select name="language">#}
-{#                {% get_language_info_list for LANGUAGES as languages %}#}
-{#                {% for language in languages %}#}
-{#                    <option value="{{ language.code }}"#}
-{#                            {% if language.code == LANGUAGE_CODE %}selected="selected"{% endif %}>#}
-{#                        {{ language.name_local }} ({{ language.code }})#}
-{#                    </option>#}
-{#                {% endfor %}#}
-{#            </select>#}
-{#            <input type="submit" value="Change"/>#}
-{#        </form>#}
-{#    </div>#}
 
-    <h1>Joseph & Louise</h1>
-    <h3>{% trans "June 3rd 2017" %}</h3>
-</div>
+{% block nav %}
+    <header class="b-lazy {% block header-class %}{% endblock %}" data-src="{% static "dist/img/header-1280.png" %}">
+        <nav class="navbar navbar-light">
+            <ul class="nav navbar-nav flex flex-justify-sa">
+                <li class="nav-item {% block nav-home %}{% endblock %}">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item {% block nav-rsvp %}{% endblock %}">
+                    <a class="nav-link" href="/rsvp">RSVP</a>
+                </li>
+                <li class="nav-item {% block nav-faq %}{% endblock %}">
+                    <a class="nav-link" href="/faq">FAQs</a>
+                </li>
+                <li class="nav-item {% block nav-gifts %}{% endblock %}">
+                    <a class="nav-link" href="{% url "weddingapp.views.gifts_view" %}">Gifts</a>
+                </li>
+                <li class="nav-item {% block nav-hotels %}{% endblock %}">
+                    <a class="nav-link" href="{% url "weddingapp.views.hotels_view" %}">Hotels</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header-content">
+            <div class="p-a-3 text-xs-left">
+                <h1 class="header-title">Joseph & Louise</h1>
+                <h2 class="header-subtitle">{% trans "June 3rd 2017" %}</h2>
+            </div>
+        </div>
+    </header>
+{% endblock %}
 
 {% block layout %}{% endblock %}
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-18052288-6', 'auto');
-  ga('send', 'pageview');
+<script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-18052288-6', 'auto');
+    ga('send', 'pageview');
+</script>
+<script type="text/javascript" src="{% static "vendor/js/blazy.min.js" %}"></script>
+<script type="text/javascript">
+    ;(function(){var bLazy = new Blazy();})();
 </script>
 </body>
 </html>

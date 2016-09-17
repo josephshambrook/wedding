@@ -71,38 +71,23 @@ def check_invite(invite):
 
 
 def home_view(request):
-    # CSS contents for inline styles
-    # speeds up load time
-    filename = 'weddingapp/static/dist/css/home_styles.css'
-    home_css = file(filename).read()
-
-    return render(request, 'weddingapp/home.html', {'home_css': home_css})
+    return render(request, 'weddingapp/home.html', {})
 
 
 def gifts_view(request):
-    # CSS contents for inline styles
-    # speeds up load time
-    filename = 'weddingapp/static/dist/css/home_styles.css'
-    home_css = file(filename).read()
-
     giftlist = Gift.objects.order_by('category', 'item').all()
 
-    return render(request, 'weddingapp/giftlist.html', {'home_css': home_css, 'giftlist': giftlist})
+    return render(request, 'weddingapp/giftlist.html', {'giftlist': giftlist})
 
 
 def hotels_view(request):
-    # CSS contents for inline styles
-    # speeds up load time
-    filename = 'weddingapp/static/dist/css/home_styles.css'
-    home_css = file(filename).read()
-
     hotels_list = Hotel.objects.all()
 
     for hotel in hotels_list:
         link = construct_maps_link(hotel.postcode)
         hotel.static_map_link = link
 
-    return render(request, 'weddingapp/hotels.html', {'home_css': home_css, 'hotels_list': hotels_list})
+    return render(request, 'weddingapp/hotels.html', {'hotels_list': hotels_list})
 
 
 def construct_maps_link(postcode):
@@ -137,8 +122,8 @@ def index_view(request):
             })
         else:
             return HttpResponseRedirect(reverse('weddingapp:attend', args=(code,)))
-    else:
-        return render(request, 'weddingapp/index.html', {})
+
+    return render(request, 'weddingapp/index.html', {})
 
 
 def welcome_view(request, code):

@@ -1,0 +1,29 @@
+{% load staticfiles %}
+{% load i18n %}
+{% load active_page %}
+
+<header class="b-lazy" data-src="{% static "dist/img/header-notting-hill-faded.png" %}">
+    <nav class="navbar navbar-light">
+        <ul class="nav navbar-nav flex flex-justify-sa">
+            <li class="nav-item {% active_page request "/" %}">
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/rsvp">RSVP</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url "weddingapp.views.gifts_view" %}">Gifts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url "weddingapp.views.hotels_view" %}">Hotels</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="header-content">
+        <div class="p-a-3 text-xs-center text-sm-left">
+            <h1 class="header-title">Joseph & Louise</h1>
+            <h2 class="header-subtitle">{% trans "June 3rd 2017" %}</h2>
+        </div>
+    </div>
+</header>

@@ -4921,7 +4921,7 @@ var
 	rscriptTypeMasked = /^true\/(.*)/,
 	rcleanScript = /^\s*<!(?:\[CDATA\[|--)|(?:\]\]|--)>\s*$/g,
 
-	// We have to close these tags to support XHTML (#13200)
+	// We have to close these tags.py to support XHTML (#13200)
 	wrapMap = {
 
 		// Support: IE9

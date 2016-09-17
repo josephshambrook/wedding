@@ -1,36 +1,52 @@
-// Small Header
-.small-header {
-  background-color: #ADD2ED;
-  color: $blue-dark;
-  margin-bottom: 1em;
-  padding: 2em;
+header {
+  background-image: linear-gradient(135deg, #454545 0%, #7D7D7D 100%);
+  background-attachment: scroll;
+  background-position: right center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  color: $ivory;
+  margin-bottom:50px;
+  padding-bottom: 50px;
   position: relative;
-  overflow-x: hidden;
+  width: 100%;
 
-  // bunting
-  &:before, &:after {
-    background: url(../img/bunting1.svg) no-repeat;
-    content: '';
-    height: 50%;
-    position: absolute;
-    top: 0;
-    width: 25%;
-    transform-origin: 50% 150%;
-  }
-  &:before {
-    left: 0;
-    transform: rotate(-40deg);
-  }
-  &:after {
-    right: 0;
-    transform: rotate(40deg);
-  }
-
-  .row {
+  .header-content {
     align-items: center;
+    display: flex;
+    height: 400px;
+    position: relative;
+    width: 100%;
   }
 
-  h1 {
-    font-size: 3em;
+  &.small-header .header-content {
+    height:200px;
+  }
+
+  .header-title {
+    font-size: 3rem;
+  }
+  .header-subtitle {
+    font-size: 2rem;
+  }
+}
+
+nav {
+  border-bottom: 1px #818a91 solid;
+}
+
+@media(max-width: 500px) {
+  header {
+    background-position: 70% center;
+  }
+
+  nav .navbar-nav {
+    flex-wrap: wrap;
+  }
+
+  .nav-item {
+    flex:1;
+    min-width:25%;
+    text-align: center;
   }
 }

@@ -18,3 +18,56 @@
 .faq-content p {
   margin-bottom: 1.5rem;
 }
+
+section {
+  padding: 90px 0;
+}
+
+.section-title {
+  margin-bottom: 20px;
+  > * {
+    font-size: 2.5rem;
+  }
+}
+
+.section-about-wedding {
+  min-height: 480px;
+}
+
+.section-about-couple {
+  background: $blue;
+  position: relative;
+
+  .map-bkgd {
+    background: url(../img/uk-map.svg) no-repeat 5% 10px, url(../img/da-map.svg) no-repeat 95% 50px;
+    background-size: 100px;
+    height: 100%;
+    left: 0;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.section-links {
+  background: linear-gradient($blue-dark-rgba, $blue-dark-rgba), url(../img/cups-min.png) no-repeat center center scroll;
+  background-size: cover;
+  min-height: 330px;
+}
+
+.section-contact {
+  min-height: 350px;
+}
+
+.section-final-photo {
+  background: linear-gradient($ivory-rgba, $ivory-rgba), url(../img/footer-tree.png) no-repeat center bottom;
+  background-size: cover;
+  height: 400px;
+}
+
+@media(min-width: 544px) {
+  .section-final-photo {
+    height: 600px;
+  }
+}

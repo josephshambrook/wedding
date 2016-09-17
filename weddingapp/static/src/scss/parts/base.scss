@@ -12,10 +12,17 @@ $ivory-rgba: rgba(243,244,239, 0.5);
 // General styles
 body {
   background-color: $ivory;
-  font-family: 'Rokkitt', serif;
+  font-family: 'Rokkitt', Arial, sans-serif;
   font-size: 1.2em;
 }
 
+// useful flex classes
+.flex {
+  display: flex;
+}
+.flex-justify-sa {
+  justify-content: space-around;
+}
 .flex-justify-end {
   justify-content: flex-end;
 }
