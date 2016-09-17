@@ -26,7 +26,7 @@
 
 {% block nav %}
     <header class="b-lazy {% block header-class %}{% endblock %}" data-src="{% static "dist/img/header-1280.png" %}">
-        <nav class="navbar navbar-light">
+        <nav class="navbar">
             <ul class="nav navbar-nav flex flex-justify-sa">
                 <li class="nav-item {% block nav-home %}{% endblock %}">
                     <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
@@ -39,9 +39,6 @@
                 </li>
                 <li class="nav-item {% block nav-gifts %}{% endblock %}">
                     <a class="nav-link" href="{% url "weddingapp.views.gifts_view" %}">Gifts</a>
-                </li>
-                <li class="nav-item {% block nav-hotels %}{% endblock %}">
-                    <a class="nav-link" href="{% url "weddingapp.views.hotels_view" %}">Hotels</a>
                 </li>
             </ul>
         </nav>

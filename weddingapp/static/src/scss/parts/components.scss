@@ -6,7 +6,7 @@ header {
   -webkit-background-size: cover;
   background-size: cover;
   color: $ivory;
-  margin-bottom:50px;
+  margin-bottom: 50px;
   padding-bottom: 50px;
   position: relative;
   width: 100%;
@@ -20,7 +20,7 @@ header {
   }
 
   &.small-header .header-content {
-    height:200px;
+    height: 200px;
   }
 
   .header-title {
@@ -31,8 +31,18 @@ header {
   }
 }
 
-nav {
+.navbar {
   border-bottom: 1px #818a91 solid;
+}
+
+.navbar-nav .nav-item {
+  .nav-link {
+    color: #eceeef;
+  }
+
+  &.active .nav-link {
+    text-decoration: underline;
+  }
 }
 
 @media(max-width: 500px) {
@@ -45,8 +55,8 @@ nav {
   }
 
   .nav-item {
-    flex:1;
-    min-width:25%;
+    flex: 1;
+    min-width: 25%;
     text-align: center;
   }
 }
