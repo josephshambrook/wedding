@@ -10,15 +10,18 @@
     <div class="container m-b-3">
         <div class="row">
             <div class="col-md-offset-1 col-lg-offset-2 col-lg-8 col-md-10 col-sm-12 col-xs-12">
-{#                <p class="lead">Below is our full gift list. To be able to have a variety of gifts whilst not being limited to a certain shop, we have decided to list everything here. To avoid duplicates, we have asked ____ and _____ to help us co-ordinate which gifts to buy. Therefore, before purchasing a gift for us, please contact [insert details]</p>#}
-                <p class="lead">We're still gradually adding gifts. Hold tight!</p>
+                <p>{% trans "Our gift list is below should you wish to buy us a wedding gift. However, please do not feel obliged to buy us a gift at all; all we really want for our special day is to have you there to celebrate with." %}</p>
+
+                <p>{% trans "For some items, the attached link is the exact item we would like and for some the link is a suggestion. We have indicated which is applicable for each item." %}</p>
+
+                <p>{% trans "To avoid duplicate gifts and returns, we kindly ask guests to contact Rachel Shambrook on rachel.shambrook@icloud.com before purchasing a gift, to check if the gift you intend to purchase has already been purchased." %}</p>
                 <table class="table table-bordered table-hover">
                     <thead>
                         <tr>
-                            <th>Item</th>
-                            <th>Category</th>
-                            <th>Quantity</th>
-                            <th>Actual Item?</th>
+                            <th>{% trans "Item" %}</th>
+                            <th>{% trans "Category" %}</th>
+                            <th>{% trans "Quantity" %}</th>
+                            <th>{% trans "Actual Item?" %}</th>
                             <th></th>
                         </tr>
                     </thead>
@@ -31,7 +34,7 @@
                                 <td>{{ gift.get_actual_display }}</td>
                                 <td>
                                     {% if gift.url and gift.quantity > 0 %}
-                                        <a href="{{ gift.url }}" target="_blank" rel="nofollow">Link</a>
+                                        <a href="{{ gift.url }}" target="_blank" rel="nofollow">{% trans "Link" %}</a>
                                     {% endif %}
                                 </td>
                             </tr>

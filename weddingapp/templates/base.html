@@ -30,16 +30,16 @@
         <nav class="navbar">
             <ul class="nav navbar-nav flex flex-justify-sa">
                 <li class="nav-item {% block nav-home %}{% endblock %}">
-                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/">{% trans "Home" %}</a>
                 </li>
-                <li class="nav-item {% block nav-rsvp %}{% endblock %}">
-                    <a class="nav-link" href="/rsvp">RSVP</a>
-                </li>
+{#                <li class="nav-item {% block nav-rsvp %}{% endblock %}">#}
+{#                    <a class="nav-link" href="/rsvp">RSVP</a>#}
+{#                </li>#}
                 <li class="nav-item {% block nav-faq %}{% endblock %}">
                     <a class="nav-link" href="/faq">FAQs</a>
                 </li>
                 <li class="nav-item {% block nav-gifts %}{% endblock %}">
-                    <a class="nav-link" href="{% url "weddingapp.views.gifts_view" %}">Gifts</a>
+                    <a class="nav-link" href="{% url "weddingapp.views.gifts_view" %}">{% trans "Gifts" %}</a>
                 </li>
             </ul>
         </nav>

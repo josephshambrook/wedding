@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-06 21:00+0100\n"
+"POT-Creation-Date: 2016-11-07 18:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ourwedding/settings.py:133
+#: ourwedding/settings.py:134
 msgid "Danish"
 msgstr "Dansk"
 
-#: ourwedding/settings.py:134
+#: ourwedding/settings.py:135
 msgid "English"
 msgstr "Engelsk"
 
@@ -37,16 +37,23 @@ msgid ""
 msgstr ""
 "Ville /guest_name/ være interesseret i transport fra kirken til receptionen?"
 
-#: weddingapp/templates/base.html:45
-#: weddingapp/templates/weddingapp/home.html:36
+#: weddingapp/templates/base.html:33
+msgid "Home"
+msgstr "Hjem"
+
+#: weddingapp/templates/base.html:42
+msgid "Gifts"
+msgstr "Ønskeseddel"
+
+#: weddingapp/templates/base.html:50 weddingapp/templates/header.html.py:26
 msgid "June 3rd 2017"
 msgstr "3. juni 2017"
 
-#: weddingapp/templates/layout_faq.html:19
+#: weddingapp/templates/layout_faq.html:18
 msgid "Practical"
 msgstr "Praktisk"
 
-#: weddingapp/templates/layout_faq.html:25
+#: weddingapp/templates/layout_faq.html:24
 msgid "Cultural"
 msgstr "Kulturel"
 
@@ -225,7 +232,7 @@ msgstr ""
 "royale bryllup fra 2004:"
 
 #: weddingapp/templates/weddingapp/cultural.html:27
-#: weddingapp/templates/weddingapp/practical.html:39
+#: weddingapp/templates/weddingapp/practical.html:41
 msgid "Formal pictures"
 msgstr "Formelle billeder"
 
@@ -241,7 +248,7 @@ msgstr ""
 "overrasket!"
 
 #: weddingapp/templates/weddingapp/cultural.html:32
-#: weddingapp/templates/weddingapp/practical.html:36
+#: weddingapp/templates/weddingapp/practical.html:38
 msgid "Confetti or rice"
 msgstr "Konfetti eller ris"
 
@@ -256,7 +263,7 @@ msgstr ""
 "som man selv skal medbringe. Vi har besluttet at der skal kastes med ris."
 
 #: weddingapp/templates/weddingapp/cultural.html:37
-#: weddingapp/templates/weddingapp/practical.html:48
+#: weddingapp/templates/weddingapp/practical.html:52
 msgid "Songs for an occasion"
 msgstr "Lejlighedssange"
 
@@ -324,55 +331,116 @@ msgstr "Gå til vores hjemmeside"
 msgid "An image of Joseph and Louise on Chelsea Embankment in London"
 msgstr "Et billede af Joseph og Louise på Chelsea Embankment i London"
 
-#: weddingapp/templates/weddingapp/home.html:43
+#: weddingapp/templates/weddingapp/giftlist.html:13
+msgid ""
+"Our gift list is below should you wish to buy us a wedding gift. However, "
+"please do not feel obliged to buy us a gift at all; all we really want for "
+"our special day is to have you there to celebrate with."
+msgstr ""
+"Vores ønskesedder er herunder, hvis du ønsker at købe en gave til os. Der er "
+"dog ingen forpligtelse, da det vi mest ønsker os er at du er der til at "
+"fejre vores særlige dag sammen med os."
+
+#: weddingapp/templates/weddingapp/giftlist.html:15
+msgid ""
+"For some items, the attached link is the exact item we would like and for "
+"some the link is a suggestion. We have indicated which is applicable for "
+"each item."
+msgstr ""
+"For nogle punkter er linket den præcise ting vi ønsker os, og for andre er "
+"linket et forslag. Vi har indikeret hvad der gælder for hvert punkt."
+
+#: weddingapp/templates/weddingapp/giftlist.html:17
+msgid ""
+"To avoid duplicate gifts and returns, we kindly ask guests to contact Rachel "
+"Shambrook on rachel.shambrook@icloud.com before purchasing a gift, to check "
+"if the gift you intend to purchase has already been purchased."
+msgstr ""
+"For at undgå dubletter beder vi venligst vores gæster om at kontakte Rachel "
+"Shambrook på rachel.shambrook@icloud.com før man køber en gave, så man kan "
+"tjekke om den gave man har tænkt sig allerede er blevet købt."
+
+#: weddingapp/templates/weddingapp/giftlist.html:21
+msgid "Item"
+msgstr "Punkt"
+
+#: weddingapp/templates/weddingapp/giftlist.html:22
+msgid "Category"
+msgstr "Kategori"
+
+#: weddingapp/templates/weddingapp/giftlist.html:23
+msgid "Quantity"
+msgstr "Antal"
+
+#: weddingapp/templates/weddingapp/giftlist.html:24
+msgid "Actual Item?"
+msgstr "Egentlige ting?"
+
+#: weddingapp/templates/weddingapp/giftlist.html:37
+msgid "Link"
+msgstr "Link"
+
+#: weddingapp/templates/weddingapp/home.html:13
 msgid "The Wedding"
 msgstr "Brylluppet"
 
-#: weddingapp/templates/weddingapp/home.html:50
+#: weddingapp/templates/weddingapp/home.html:20
 msgid ""
 "The ceremony will take place from 2:30pm at St. George's Church, Beckenham, "
 "Kent."
 msgstr ""
 "Brylluppet finder sted fra 14:30 i St. George's Church, Beckenham, Kent."
 
-#: weddingapp/templates/weddingapp/home.html:56
+#: weddingapp/templates/weddingapp/home.html:26
 msgid ""
 "The reception and dinner will take place at The Old Rectory, Brentwood, "
 "Essex."
 msgstr "Reception og middag finder sted ved The Old Rectory, Brentwood, Essex."
 
-#: weddingapp/templates/weddingapp/home.html:73
+#: weddingapp/templates/weddingapp/home.html:36
 msgid "Got Questions?"
 msgstr "Har du Spørgsmål?"
 
-#: weddingapp/templates/weddingapp/home.html:74
+#: weddingapp/templates/weddingapp/home.html:37
 msgid "Go to FAQs"
 msgstr "Gå til ofte stillede spørgsmål"
 
-#: weddingapp/templates/weddingapp/home.html:77
+#: weddingapp/templates/weddingapp/home.html:40
 msgid "Need to RSVP?"
 msgstr "Vil du sende svar?"
 
-#: weddingapp/templates/weddingapp/home.html:78
+#: weddingapp/templates/weddingapp/home.html:41
 msgid "Go to RSVP site"
 msgstr "Gå til svar side"
 
-#: weddingapp/templates/weddingapp/home.html:87
+#: weddingapp/templates/weddingapp/home.html:50
 msgid "Get in touch"
 msgstr "Kontakt os"
 
-#: weddingapp/templates/weddingapp/home.html:117
+#: weddingapp/templates/weddingapp/home.html:80
+#, fuzzy
+#| msgid ""
+#| "Our beautiful photos are by <a href=\"http://www."
+#| "bennicarolweddingphotography.com/\">Benni Carol Photography</a>."
 msgid ""
-"Our beautiful photos are by <a href=\"http://www."
-"bennicarolweddingphotography.com/\">Benni Carol Photography</a>."
+"Our beautiful photos are by\n"
+"                            <a href=\"http://www."
+"bennicarolweddingphotography.com/\">Benni Carol Photography</a>\n"
+"                            ."
 msgstr ""
 "Vores smukke billeder er af <a href=\"http://www."
 "bennicarolweddingphotography.com\">Benni Carol Photography</a>."
 
-#: weddingapp/templates/weddingapp/home.html:122
+#: weddingapp/templates/weddingapp/home.html:87
+#, fuzzy
+#| msgid ""
+#| "Website design and development by <a href=\"http://www.josephshambrook.com"
+#| "\">Joseph Shambrook</a> (the groom!)."
 msgid ""
-"Website design and development by <a href=\"http://www.josephshambrook.com"
-"\">Joseph Shambrook</a> (the groom!)."
+"Website design and development by\n"
+"                            <a href=\"http://www.josephshambrook.com"
+"\">Joseph Shambrook</a> (the\n"
+"                            groom!)."
 msgstr ""
 "Website design og udvikling af <a href=\"http://www.josephshambrook.com"
 "\">Joseph Shambrook</a> (gommen!)"
@@ -451,11 +519,11 @@ msgstr "Oplysninger om kirken"
 msgid "The ceremony will take place at"
 msgstr "Bryllppet vil finde sted i"
 
-#: weddingapp/templates/weddingapp/practical.html:33
+#: weddingapp/templates/weddingapp/practical.html:35
 msgid "Unplugged church"
 msgstr "Frakoblet kirke"
 
-#: weddingapp/templates/weddingapp/practical.html:34
+#: weddingapp/templates/weddingapp/practical.html:36
 msgid ""
 "While we appreciate that our guests are as keen to remember the day as we "
 "are, we have hired photographers to cover the day, and we will naturally be "
@@ -472,25 +540,26 @@ msgstr ""
 "kirkedørene er alle mere end velkomne til at tage alle de billeder de har "
 "lyst til!"
 
-#: weddingapp/templates/weddingapp/practical.html:37
-#: weddingapp/templates/weddingapp/practical.html:40
-#: weddingapp/templates/weddingapp/practical.html:49
+#: weddingapp/templates/weddingapp/practical.html:39
+#: weddingapp/templates/weddingapp/practical.html:42
+#: weddingapp/templates/weddingapp/practical.html:53
+#: weddingapp/templates/weddingapp/practical.html:112
 msgid "Click here to view this answer."
 msgstr "Klik her for at se dette svar."
 
-#: weddingapp/templates/weddingapp/practical.html:42
+#: weddingapp/templates/weddingapp/practical.html:44
 msgid "Reception details"
 msgstr "Oplysninger om receptionen"
 
-#: weddingapp/templates/weddingapp/practical.html:43
+#: weddingapp/templates/weddingapp/practical.html:45
 msgid "The reception will take place at"
 msgstr "Receptionen vil finde sted ved"
 
-#: weddingapp/templates/weddingapp/practical.html:45
+#: weddingapp/templates/weddingapp/practical.html:49
 msgid "Transport to the reception"
 msgstr "Transport til receptionen"
 
-#: weddingapp/templates/weddingapp/practical.html:46
+#: weddingapp/templates/weddingapp/practical.html:50
 msgid ""
 "Depending on the amount of people who express interest, we will provide "
 "transport from the church to the reception. Once we have received all of our "
@@ -501,11 +570,11 @@ msgstr ""
 "transport fra kirken til receptionen. Når vi har modtaget svar fra alle vil "
 "vi træffe en beslutning og kontakte alle dem som har vist interesse."
 
-#: weddingapp/templates/weddingapp/practical.html:51
+#: weddingapp/templates/weddingapp/practical.html:55
 msgid "Speeches"
 msgstr "Taler"
 
-#: weddingapp/templates/weddingapp/practical.html:52
+#: weddingapp/templates/weddingapp/practical.html:56
 msgid ""
 "If you would like to toast us with a speech, please let us know by email so "
 "that this can be arranged with our toastmaster on the day."
@@ -513,35 +582,19 @@ msgstr ""
 "Hvis du/I gerne vil skåle os med en tale så lad os da vide per email så "
 "dette kan arrangeres med vores toastmaster på dagen."
 
-#: weddingapp/templates/weddingapp/practical.html:54
+#: weddingapp/templates/weddingapp/practical.html:58
 msgid "Cabs"
 msgstr "Taxi"
 
-#: weddingapp/templates/weddingapp/practical.html:55
-msgid ""
-"There is a range of local taxi services for transport from the reception. "
-"We'll compile a list closer to the wedding."
-msgstr ""
-"Der findes en række lokal taxa firmaer, så man kan arrangere transport fra "
-"receptionen. Vi vil sammensætte en liste nærmere brylluppet."
-
-#: weddingapp/templates/weddingapp/practical.html:57
+#: weddingapp/templates/weddingapp/practical.html:111
 msgid "Hotels"
 msgstr "Hotel"
 
-#: weddingapp/templates/weddingapp/practical.html:58
-msgid ""
-"There are multiple options for accommodation nearby. We'll compile a list "
-"closer to the wedding."
-msgstr ""
-"Der er en række muligheder for overnatning i nærheden af receptionen. Vi vil "
-"sammensætte en liste nærmere brylluppet."
-
-#: weddingapp/templates/weddingapp/practical.html:60
+#: weddingapp/templates/weddingapp/practical.html:114
 msgid "Contact Details"
 msgstr "Kontaktoplysninger"
 
-#: weddingapp/templates/weddingapp/practical.html:61
+#: weddingapp/templates/weddingapp/practical.html:115
 msgid "You can contact us either by email or Facebook."
 msgstr "Vi kan kontaktes enten på email eller på facebook."
 
@@ -553,3 +606,17 @@ msgid ""
 msgstr ""
 "Hej %(group)s! Velkommen til vores hjemmeside hvor du/I kan sende svar. Som "
 "angivet på invitationen bedes dette gjort senest 15. august 2016."
+
+#~ msgid ""
+#~ "There is a range of local taxi services for transport from the reception. "
+#~ "We'll compile a list closer to the wedding."
+#~ msgstr ""
+#~ "Der findes en række lokal taxa firmaer, så man kan arrangere transport "
+#~ "fra receptionen. Vi vil sammensætte en liste nærmere brylluppet."
+
+#~ msgid ""
+#~ "There are multiple options for accommodation nearby. We'll compile a list "
+#~ "closer to the wedding."
+#~ msgstr ""
+#~ "Der er en række muligheder for overnatning i nærheden af receptionen. Vi "
+#~ "vil sammensætte en liste nærmere brylluppet."
