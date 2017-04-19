@@ -4,6 +4,9 @@
 
 {% block content %}
 
+    <h5><strong>{% trans "Contact Details" %}</strong></h5>
+    <p>{% trans "You can contact Joseph by email at josephshambrook@gmail.com" %}</p>
+
     <h5><strong>{% trans "Wedding date and time" %}</strong></h5>
     <p>{% trans "The date of the wedding is June 3rd 2017. The ceremony is due to start at 2:30pm." %}</p>
 
@@ -24,8 +27,7 @@
     <p>{% trans "The dress code is formal casual." %}</p>
 
     <h5><strong>{% trans "Church details" %}</strong></h5>
-    <p>{% trans "The ceremony will take place at" %} <a href="https://goo.gl/maps/FHTUc673Qq72" target="_blank"
-                                                        title="Google Maps link">St. George's Church, Beckenham,
+    <p>{% trans "The ceremony will take place at" %} <a href="https://goo.gl/maps/FHTUc673Qq72" target="_blank" title="Google Maps link">St. George's Church, Beckenham,
         Kent.</a></p>
 
     {#    Need to find out! #}
@@ -42,18 +44,17 @@
     <p><a href="{% url 'faq:faq_cultural' %}#formal-pictures">{% trans "Click here to view this answer." %}</a></p>
 
     <h5><strong>{% trans "Reception details" %}</strong></h5>
-    <p>{% trans "The reception will take place at" %} <a href="https://goo.gl/maps/b981DjFocAN2" target="_blank"
-                                                         title="Google Maps for The Old Rectory">The Old Rectory,
+    <p>{% trans "The reception will take place at" %} <a href="https://goo.gl/maps/b981DjFocAN2" target="_blank" title="Google Maps for The Old Rectory">The Old Rectory,
         Brentwood, Essex.</a></p>
 
     <h5><strong>{% trans "Transport to the reception" %}</strong></h5>
-    <p>{% trans "Depending on the amount of people who express interest, we will provide transport from the church to the reception. Once we have received all of our RSVPs, we will make a decision and contact everyone who expressed an interest." %}</p>
+    <p>{% trans "We have booked transportation that will be able to take some of our guests between the church and reception before and after the wedding. These guests must have selected the option for transportation whilst responding to the invitation. If you think you should have received details of this, but didn't, can't remember if you stated you needed transport, or have any concerns, please contact Joseph as soon as possible." %}</p>
 
     <h5><strong>{% trans "Songs for an occasion" %}</strong></h5>
     <p><a href="{% url 'faq:faq_cultural' %}#no-songs">{% trans "Click here to view this answer." %}</a></p>
 
     <h5><strong>{% trans "Speeches" %}</strong></h5>
-    <p>{% trans "If you would like to toast us with a speech, please let us know by email so that this can be arranged with our toastmaster on the day." %}</p>
+    <p>{% trans "Our toastmaster for the reception is Andreas Brix Nolsøe Wielandt. If you would like to toast us with a speech, you must let Andreas know at least 2 weeks before the wedding." %}</p>
 
     <h5><strong>{% trans "Cabs" %}</strong></h5>
 
@@ -110,8 +111,5 @@
 
     <h5><strong>{% trans "Hotels" %}</strong></h5>
     <p><a href="{% url "weddingapp.views.hotels_view" %}">{% trans "Click here to view this answer." %}</a></p>
-
-    <h5><strong>{% trans "Contact Details" %}</strong></h5>
-    <p>{% trans "You can contact us either by email or Facebook." %}</p>
 
 {% endblock %}
