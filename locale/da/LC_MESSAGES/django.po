@@ -462,8 +462,6 @@ msgid "Contact Details"
 msgstr "Kontaktoplysninger"
 
 #: weddingapp/templates/weddingapp/practical.html:8
-#, fuzzy
-#| msgid "You can contact us either by email or Facebook."
 msgid "You can contact Joseph by email at josephshambrook@gmail.com"
 msgstr "Joe kan kontaktes på josephshambrook@gmail.com"
 
