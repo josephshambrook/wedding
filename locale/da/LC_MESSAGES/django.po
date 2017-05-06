@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-07 18:57+0000\n"
+"POT-Creation-Date: 2017-05-06 13:41+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -232,7 +232,7 @@ msgstr ""
 "royale bryllup fra 2004:"
 
 #: weddingapp/templates/weddingapp/cultural.html:27
-#: weddingapp/templates/weddingapp/practical.html:41
+#: weddingapp/templates/weddingapp/practical.html:43
 msgid "Formal pictures"
 msgstr "Formelle billeder"
 
@@ -248,7 +248,7 @@ msgstr ""
 "overrasket!"
 
 #: weddingapp/templates/weddingapp/cultural.html:32
-#: weddingapp/templates/weddingapp/practical.html:38
+#: weddingapp/templates/weddingapp/practical.html:40
 msgid "Confetti or rice"
 msgstr "Konfetti eller ris"
 
@@ -263,7 +263,7 @@ msgstr ""
 "som man selv skal medbringe. Vi har besluttet at der skal kastes med ris."
 
 #: weddingapp/templates/weddingapp/cultural.html:37
-#: weddingapp/templates/weddingapp/practical.html:52
+#: weddingapp/templates/weddingapp/practical.html:53
 msgid "Songs for an occasion"
 msgstr "Lejlighedssange"
 
@@ -458,30 +458,41 @@ msgid "Enter your code here"
 msgstr "Indtast din kode her"
 
 #: weddingapp/templates/weddingapp/practical.html:7
+msgid "Contact Details"
+msgstr "Kontaktoplysninger"
+
+#: weddingapp/templates/weddingapp/practical.html:8
+#, fuzzy
+#| msgid "You can contact us either by email or Facebook."
+msgid "You can contact Joseph by email at josephshambrook@gmail.com"
+msgstr "Joe kan kontaktes på josephshambrook@gmail.com"
+
+#: weddingapp/templates/weddingapp/practical.html:10
 msgid "Wedding date and time"
 msgstr "Bryllupsdato og tid"
 
-#: weddingapp/templates/weddingapp/practical.html:8
+#: weddingapp/templates/weddingapp/practical.html:11
 msgid ""
 "The date of the wedding is June 3rd 2017. The ceremony is due to start at "
-"2:30pm."
-msgstr ""
-"Bryllupsdatoen er 3. juni 2017. Brylluppet er sat til at started kl 14.30."
+"2:30pm, but please aim to arrive 15 minutes early to avoid any delays. The "
+"ceremony will last for around 1 hour. As an extra note, there is a separate "
+"wedding just before ours at the same church."
+msgstr "Datoen for brylluppet er 3. juni 2017. Vielsen starter klokken 14.30, men gæster bedes ankomme 15 minutter tidligt forat undgå forsinkelser. Brylluppet vil vare omkring en time. Til oplysning, et andet bryllup vil finde sted lige før vores i samme kirke."
 
-#: weddingapp/templates/weddingapp/practical.html:10
+#: weddingapp/templates/weddingapp/practical.html:13
 msgid "RSVP date"
 msgstr "S.U. dato"
 
-#: weddingapp/templates/weddingapp/practical.html:11
+#: weddingapp/templates/weddingapp/practical.html:14
 msgid ""
 "As stated on the invitation, please complete your RSVP by August 15th 2016."
 msgstr "Som angivet på invitationen udbedes svar senest 15. august 2016. "
 
-#: weddingapp/templates/weddingapp/practical.html:13
+#: weddingapp/templates/weddingapp/practical.html:16
 msgid "Lost RSVP code"
 msgstr "Mistet svar kode"
 
-#: weddingapp/templates/weddingapp/practical.html:14
+#: weddingapp/templates/weddingapp/practical.html:17
 msgid ""
 "If you have lost your RSVP code, please send us an email and we will be "
 "happy to resend it to you."
@@ -489,11 +500,11 @@ msgstr ""
 "Hvis du/I har mistet din/Jeres svar kode, så send os en email og så "
 "gensender vi den gerne."
 
-#: weddingapp/templates/weddingapp/practical.html:16
+#: weddingapp/templates/weddingapp/practical.html:19
 msgid "Amend RSVP"
 msgstr "Ændre svar"
 
-#: weddingapp/templates/weddingapp/practical.html:17
+#: weddingapp/templates/weddingapp/practical.html:20
 msgid ""
 "If you have sent your RSVP and later realise that you made a mistake, or "
 "would like to amend the details you submitted, please contact us as soon as "
@@ -503,27 +514,27 @@ msgstr ""
 "gerne vil ændre de oplsyninger du/I har sendt, så kontakt os gerne snarest "
 "muligt."
 
-#: weddingapp/templates/weddingapp/practical.html:23
+#: weddingapp/templates/weddingapp/practical.html:26
 msgid "Dress code"
 msgstr "Dress code"
 
-#: weddingapp/templates/weddingapp/practical.html:24
+#: weddingapp/templates/weddingapp/practical.html:27
 msgid "The dress code is formal casual."
 msgstr "Dress coden er formel afslappet."
 
-#: weddingapp/templates/weddingapp/practical.html:26
+#: weddingapp/templates/weddingapp/practical.html:29
 msgid "Church details"
 msgstr "Oplysninger om kirken"
 
-#: weddingapp/templates/weddingapp/practical.html:27
+#: weddingapp/templates/weddingapp/practical.html:30
 msgid "The ceremony will take place at"
 msgstr "Bryllppet vil finde sted i"
 
-#: weddingapp/templates/weddingapp/practical.html:35
+#: weddingapp/templates/weddingapp/practical.html:37
 msgid "Unplugged church"
 msgstr "Frakoblet kirke"
 
-#: weddingapp/templates/weddingapp/practical.html:36
+#: weddingapp/templates/weddingapp/practical.html:38
 msgid ""
 "While we appreciate that our guests are as keen to remember the day as we "
 "are, we have hired photographers to cover the day, and we will naturally be "
@@ -540,63 +551,56 @@ msgstr ""
 "kirkedørene er alle mere end velkomne til at tage alle de billeder de har "
 "lyst til!"
 
-#: weddingapp/templates/weddingapp/practical.html:39
-#: weddingapp/templates/weddingapp/practical.html:42
-#: weddingapp/templates/weddingapp/practical.html:53
-#: weddingapp/templates/weddingapp/practical.html:112
+#: weddingapp/templates/weddingapp/practical.html:41
+#: weddingapp/templates/weddingapp/practical.html:44
+#: weddingapp/templates/weddingapp/practical.html:54
+#: weddingapp/templates/weddingapp/practical.html:113
 msgid "Click here to view this answer."
 msgstr "Klik her for at se dette svar."
 
-#: weddingapp/templates/weddingapp/practical.html:44
+#: weddingapp/templates/weddingapp/practical.html:46
 msgid "Reception details"
 msgstr "Oplysninger om receptionen"
 
-#: weddingapp/templates/weddingapp/practical.html:45
+#: weddingapp/templates/weddingapp/practical.html:47
 msgid "The reception will take place at"
 msgstr "Receptionen vil finde sted ved"
 
-#: weddingapp/templates/weddingapp/practical.html:49
+#: weddingapp/templates/weddingapp/practical.html:50
 msgid "Transport to the reception"
 msgstr "Transport til receptionen"
 
-#: weddingapp/templates/weddingapp/practical.html:50
+#: weddingapp/templates/weddingapp/practical.html:51
 msgid ""
-"Depending on the amount of people who express interest, we will provide "
-"transport from the church to the reception. Once we have received all of our "
-"RSVPs, we will make a decision and contact everyone who expressed an "
-"interest."
-msgstr ""
-"Afhængig af antallet af personer som viser interesse så vil vi skaffe "
-"transport fra kirken til receptionen. Når vi har modtaget svar fra alle vil "
-"vi træffe en beslutning og kontakte alle dem som har vist interesse."
+"We have booked transportation that will be able to take some of our guests "
+"between the church and reception before and after the wedding. These guests "
+"must have selected the option for transportation whilst responding to the "
+"invitation. If you think you should have received details of this, but "
+"didn't, can't remember if you stated you needed transport, or have any "
+"concerns, please contact Joseph as soon as possible."
+msgstr "Vi har bestilt transport som vil transportere nogle gæster mellem kirken og receptionen, både før og efter brylluppet. Disse gæster skal have meldt sig til transport da de gav svar på invitationen. Hvis du mener at du burde modtaget oplysninger omkring dette, men ikke har, eller har nogle bekymringer, så venligst kontakt Joseph snarest muligt."
 
-#: weddingapp/templates/weddingapp/practical.html:55
+#: weddingapp/templates/weddingapp/practical.html:56
 msgid "Speeches"
 msgstr "Taler"
 
-#: weddingapp/templates/weddingapp/practical.html:56
+#: weddingapp/templates/weddingapp/practical.html:57
 msgid ""
-"If you would like to toast us with a speech, please let us know by email so "
-"that this can be arranged with our toastmaster on the day."
+"Our toastmaster for the reception is Andreas Brix Nolsøe Wielandt. If you "
+"would like to toast us with a speech, you must let Andreas know no later "
+"than 2 weeks before the wedding. You can email Andreas at "
 msgstr ""
-"Hvis du/I gerne vil skåle os med en tale så lad os da vide per email så "
-"dette kan arrangeres med vores toastmaster på dagen."
+"Vores toastmaster ved brylluppet er Andreas Brix Nolsøe Wielandt. Hvis du "
+"ønsker at holde en tale, bedes du melde dette til Andreas senest 2 uger "
+"inden brylluppet. Du kan emaile Andreas på abnw 2303@hotmail.com"
 
-#: weddingapp/templates/weddingapp/practical.html:58
+#: weddingapp/templates/weddingapp/practical.html:59
 msgid "Cabs"
 msgstr "Taxi"
 
-#: weddingapp/templates/weddingapp/practical.html:111
+#: weddingapp/templates/weddingapp/practical.html:112
 msgid "Hotels"
 msgstr "Hotel"
-
-#: weddingapp/templates/weddingapp/practical.html:114
-msgid "Contact Details"
-msgstr "Kontaktoplysninger"
-
-#: weddingapp/templates/weddingapp/practical.html:115
-msgid "You can contact us either by email or Facebook."
-msgstr "Vi kan kontaktes enten på email eller på facebook."
 
 #: weddingapp/templates/weddingapp/welcome.html:6
 #, python-format
@@ -606,6 +610,29 @@ msgid ""
 msgstr ""
 "Hej %(group)s! Velkommen til vores hjemmeside hvor du/I kan sende svar. Som "
 "angivet på invitationen bedes dette gjort senest 15. august 2016."
+
+#~ msgid ""
+#~ "The date of the wedding is June 3rd 2017. The ceremony is due to start at "
+#~ "2:30pm."
+#~ msgstr ""
+#~ "Bryllupsdatoen er 3. juni 2017. Brylluppet er sat til at started kl 14.30."
+
+#~ msgid ""
+#~ "Depending on the amount of people who express interest, we will provide "
+#~ "transport from the church to the reception. Once we have received all of "
+#~ "our RSVPs, we will make a decision and contact everyone who expressed an "
+#~ "interest."
+#~ msgstr ""
+#~ "Afhængig af antallet af personer som viser interesse så vil vi skaffe "
+#~ "transport fra kirken til receptionen. Når vi har modtaget svar fra alle "
+#~ "vil vi træffe en beslutning og kontakte alle dem som har vist interesse."
+
+#~ msgid ""
+#~ "If you would like to toast us with a speech, please let us know by email "
+#~ "so that this can be arranged with our toastmaster on the day."
+#~ msgstr ""
+#~ "Hvis du/I gerne vil skåle os med en tale så lad os da vide per email så "
+#~ "dette kan arrangeres med vores toastmaster på dagen."
 
 #~ msgid ""
 #~ "There is a range of local taxi services for transport from the reception. "
